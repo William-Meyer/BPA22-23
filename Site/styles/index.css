@@ -1,0 +1,13 @@
+.carOptions img{
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+.carOptions button{
+  vertical-align:top;
+  height: 200px;
+}
+#headerImg{
+  width: 100%;
+  height: auto;
+}
