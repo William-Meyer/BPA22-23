@@ -1,13 +1,66 @@
 .carOptions img{
-  width: 200px;
+  width: 15vw;
   height: auto;
   display: inline-block;
+  max-width: 240px;/*170*/
 }
 .carOptions button{
   vertical-align:top;
-  height: 200px;
+  height: 15vw;
+  max-height: 240px;
+  border-radius: 0;
+  border-color: #1e556f;
+}
+.carOptions p{
+    margin-top: -5%;
+    font-size: min(1.5vw, 28px);
+}
+.calc{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.calc button{
+  width: 6vw;
+  height: 6vw;
+  border-radius: 20vw;
+  font-size: 4.5vw;
+  color: #1e556f;
+  border-color: #1e556f
 }
 #headerImg{
   width: 100%;
   height: auto;
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+#quizButton{
+  width: 25vw;
+  max-width: 400px;
+  height: 4vw;
+  max-height: 50px;
+  background-color: #d25353;
+  border-radius: 1vw;
+  font-family: highgate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: min(1.5vw, 24px);
+  color: #f0f2f4;
+}
+@media screen and (min-width: 1600px){
+  #quizButton{
+    border-radius: 10px;
+  }
+}
+
+h2{
+  font-family: highgate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: min(4vw, 56px);
+}
+p{
+  font-family: highgate, sans-serif;
+  color: #1e556f;
+  font-size: 1.5vw;
 }
