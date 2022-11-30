@@ -8,21 +8,12 @@
     <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="\styles/grid.css">
-    <link rel="stylesheet" href="site/styles/footer.css">
-    <link rel="stylesheet" href="site/styles/transition.css">
-    <link rel="stylesheet" href="site/styles/backtotop.css">
-    <link rel="stylesheet" href="site/styles/chat.css">
-
-    <script  src = "scripts/jquery-3.6.0.min.js"></script>
-    <script  src = "scripts/updatedNav.js"></script>
-    <script  src = "scripts/backtotop.js"></script>
-    <script  src = "scripts/chat.js"></script>
+    <link rel="stylesheet" href="../styles/grid.css">
   </head>
   <div class="nav-bar">
 <div class="nav-container">
 <div class="brand">
-  <a href="index.html"><img src="Assets/imgs/logo2.png" alt="netzero logo"></a>
+  <a href="index.html"><img src="" alt="netzero logo"></a>
 </div>
 <nav>
   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -93,38 +84,45 @@
 <button id = "quizButton" type="button" name="button">TAKE QUIZ</button>
 <h2>CALCULATE</h2>
 <div class="calcOptions">
-  <div class = "calc"><button type="button" name="button"> $ </button></div>
-  <div class = "calc"><button type="button" name="button"> $ </button></div>
-  <div class = "calc"><button type="button" name="button"> $ </button></div>
+  <div class = "calc"><button type="button" name="button"> $ </button> <p>BUDGET</p> </div>
+  <div class = "calc"><button type="button" name="button"> $ </button> <p>LOAN</p> </div>
+  <div class = "calc"><button type="button" name="button"> $ </button> <p>TRADE-IN</p> </div>
 </div>
-<hr size="value of size in numbers" width="value of width attribute in percentage" color="value of color">  
-<div class="grid infoContainer">
-  <div class="hours">
-    <h2>VISIT US</h2>
-    <p>7800 Refugee Rd, Pickerington OH, 43147<br>(614)830-2700</p>
-    <div class="staticGrid">
-      <div class="days">
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-        <p>Thursday</p>
-        <p>Friday</p>
-        <p>Saturday</p>
-        <p>Sunday</p>
-      </div>
-      <div class="times">
-        <p>10am-8pm</p>
-        <p>10am-8pm</p>
-        <p>10am-8pm</p>
-        <p>10am-8pm</p>
-        <p>10am-8pm</p>
-        <p>8am-8pm</p>
-        <p>12pm-5pm</p>
+<hr size= '4px' width= '1000vw' color= '#d25353'>
+<div id = "timeGrid"class="gridContainer">
+  <div class="grid">
+    <div class="hours">
+      <h2>VISIT <strong>US</strong></h2>
+      <hr id = "hr1" size= '4px' width= '100vw' color= '#d25353'>
+      <p>7800 Refugee Rd, Pickerington OH, 43147<br>(614)830-2700</p>
+      <hr  size= '4px' width= '80vw' color= '#d25353'>
+      <div class="grid">
+        <div class="days">
+          <p>Monday</p>
+          <p>Tuesday</p>
+          <p>Wednesday</p>
+          <p>Thursday</p>
+          <p>Friday</p>
+          <p>Saturday</p>
+          <p>Sunday</p>
+        </div>
+        <div class="times">
+          <p>10am-8pm</p>
+          <p>10am-8pm</p>
+          <p>10am-8pm</p>
+          <p>10am-8pm</p>
+          <p>10am-8pm</p>
+          <p>8am-8pm</p>
+          <p>12pm-5pm</p>
+        </div>
       </div>
     </div>
+    <img id = "ohio" src="../imgs/ohio.png" alt="ohio wiht location pin towards central Ohio">
+
   </div>
-  <img src="" alt="ohio wiht location pin towards central Ohio">
 </div>
+
+
 </main>
 
 <footer>

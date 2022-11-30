@@ -20,11 +20,19 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+.calcOptions{
+  margin-bottom: 5vw
+}
+.calcOptions p{
+  font-size: min(3vw, 56px);
+  font-weight: 500;
+
+}
 .calc button{
-  width: 6vw;
-  height: 6vw;
+  width: 12vw;
+  height: 12vw;
   border-radius: 20vw;
-  font-size: 4.5vw;
+  font-size: 9vw;
   color: #1e556f;
   border-color: #1e556f
 }
@@ -52,7 +60,26 @@
     border-radius: 10px;
   }
 }
-
+#timeGrid{
+  margin-top: -5px;
+}
+#hr1{
+  margin-top: -35px;
+}
+.hours{
+  width: 80%;
+  margin-left: 20%;
+  background-color: white;
+}
+.times{
+  text-align: right;
+  margin-right: 40px;
+  font-weight: 700;
+}
+.days{
+  text-align: left;
+  margin-left: 40px;
+}
 h2{
   font-family: highgate, sans-serif;
   font-weight: 500;
@@ -63,4 +90,9 @@ p{
   font-family: highgate, sans-serif;
   color: #1e556f;
   font-size: 1.5vw;
+}
+#ohio{
+  margin-top: -40px;
+  height: auto;
+  width: 100%;
 }
