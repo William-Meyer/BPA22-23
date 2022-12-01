@@ -71,12 +71,16 @@
   font-size: min(1.5vw, 24px);
   color: #f0f2f4;
 }
+button:hover{
+  cursor: pointer;
+}
 @media (max-width: 1000px){
   #quizButton{
     max-height: 300px;
     width: 550px;
     height:150px;
     font-size: 56px;
+    border-radius: 20px;
 
   }
 }
