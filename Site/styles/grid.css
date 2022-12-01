@@ -18,7 +18,10 @@
   display: grid;
   grid-gap: 0;
 }
-
+.staticGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ }
 @media (min-width: 1000px) {
     .left{margin-left: -5rem;}
     .right{margin-right: -5rem; order: -1;}

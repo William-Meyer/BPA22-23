@@ -57,14 +57,16 @@ $( document ).ready(function() {
     });
   });
 })(jQuery);
-document.addEventListener('scroll', function() {
-    if (window.scrollY > 150)
-    {
-    document.getElementById("navBar").style.position = "fixed";
-    document.getElementById("navBar").style.marginTop = "0px";
-    }
-    else if(document.getElementById("navBar").style.position != "absolute"){
-      document.getElementById("navBar").style.position = "absolute";
-      document.getElementById("navBar").style.marginTop = "150px";
-    } // Value of scroll Y in px
-});
+/*
+  document.addEventListener('scroll', function() {
+      if (window.scrollY > 0)
+      {
+      document.getElementById("navBar").style.position = "fixed";
+      document.getElementById("navBar").style.marginTop = "0px";
+      }
+      else if(document.getElementById("navBar").style.position != "absolute"){
+        document.getElementById("navBar").style.position = "absolute";
+        document.getElementById("navBar").style.marginTop = "150px";
+      } // Value of scroll Y in px
+  });
+  */

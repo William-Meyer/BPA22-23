@@ -9,70 +9,111 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/slides.css">
+    <script  src = "../scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src = ../scripts/nav.js></script>
+    <script type="text/javascript" src = ../scripts/slides.js></script>
   </head>
-  <div class="nav-bar">
-<div class="nav-container">
-<div class="brand">
-  <a href="index.html"><img src="" alt="netzero logo"></a>
-</div>
-<nav>
-  <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-  <ul class="nav-list">
-    <li class = "listElement" id = "learn">
-      <a href="#">Learn</a>
-      <ul class="nav-dropdown" id = "learnContents">
-        <li>
-          <a href="gas.html">Greenhouse Gases</a>
-        </li>
-        <li>
-          <a href="footprint.html">Carbon Footprint</a>
-        </li>
-        <li>
-          <a href="impact.html">The Impact</a>
-        </li>
-      </ul>
-    </li>
-    <li class = "listElement" id = "quiz">
-      <a href="survey.html">Quiz</a>
-    </li>
-    <li class = "listElement" id = "RYF">
-      <a href="#">Reduce Your Footprint</a>
-      <ul class="nav-dropdown" id = "RYFContents">
-        <li>
-          <a href="transportation.html">Transportation</a>
-        </li>
-        <li>
-          <a href="energy.html">Energy</a>
-        </li>
-        <li>
-          <a href="trash.html">Trash Production</a>
-        </li>
-        <li>
-          <a href="food.html">Food Consumption</a>
+  <nav id ="navBar">
+    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+    <div class="nav-mobile-contnet">
+      <ul>
+        <li><a href="#" class="mobile-link">&ensp;Home</a></li>
+        <li><a href="#" class="mobile-link">&ensp;About Us</a></li>
+        <li><a href="#" class="mobile-link">&ensp;Bookstore</a></li>
+        <li><a href="#" class="mobile-link">&ensp;Ohio STEM</a></li>
+        <div class="mobile-drop-container">
+          <li class = "mobile-drop-link"><a href="javascript:;">&ensp;Courses <div class = "arrow">▾</div></a>
+            <ul class = "mobile-drop-content">
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;CAD</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Engineering Programming</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Architectural Design</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Mechanical Design</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Civil Design</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Energy Managment</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Electrical Engineering</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Network Engineering</a> </li>
+              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Project Managment</a> </li>
+            </ul>
+        </div>
         </li>
       </ul>
-    </li>
-    <li class = "listElement" id = "resources">
-      <a class = "listElement" href="#">Resources</a>
-      <ul class="nav-dropdown" id = "resourcesContents">
-        <li>
-          <a href="products.html">Products</a>
-        </li>
-        <li>
-          <a href="org.html">Organizations</a>
-        </li>
-      </ul>
-    </li>
-    <li class = "listElement" id = "about">
-      <a href="about.html">About Us</a>
-    </li>
-  </ul>
-</nav>
-</div>
-</div>
+    </div>
+    <div id="nav-desktop">
+      <div class="desktop-content">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Home</a>
+      </div>
+      <div class="desktop-content">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About Us</a>
+      </div>
+      <div class="desktop-content">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bookstore</a>
+      </div>
+      <div class="desktop-content">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ohio STEM</a>
+      </div>
+      <div class="dropdown-desktop">
+        <div class="dropdown-hover">
+        <a class = "dropdownLink" href="javascript:;">Courses <div class = "arrow">▾</div></a>
+        <ul class = "dropdown-content-desktop">
+          <li> <a href="#">CAD</a> </li>
+          <li> <a href="#">Engineering<br>Programming</a> </li>
+          <li> <a href="#">Architectural<br>Design</a> </li>
+          <li> <a href="#">Mechanical<br>Design</a> </li>
+          <li> <a href="#">Civil<br>Design</a> </li>
+          <li> <a href="#">Energy<br>Managment</a> </li>
+          <li> <a href="#">Electrical<br>Engineering</a> </li>
+          <li> <a href="#">Network<br>Engineering</a> </li>
+          <li> <a href="#">Project<br>Managment</a> </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+  </nav>
+
 <main>
 <img id = "headerImg" src="../imgs/header2.jpg" alt="header banner showing a drawing of a pick up truck">
 <h2>SHOP BY <strong>TYPE</strong></h2>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <button type="button" name="button"> <img src="../imgs/car.png" alt="sadan button"> <p>CARS</p> </button>
+  </div>
+
+  <div class="mySlides fade">
+    <button type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
+  </div>
+
+  <div class="mySlides fade">
+    <button type="button" name="button"> <img src="../imgs/suv.png" alt="suv button"> <p>SUVs</p> </button>
+  </div>
+
+  <div class="mySlides fade">
+    <button type="button" name="button"> <img src="../imgs/van.png" alt="van button"> <p>VANS</p> </button>
+  </div>
+
+  <div class="mySlides fade">
+    <button type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div class = "dots" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
 <div class="carOptions">
   <button type="button" name="button"> <img src="../imgs/car.png" alt="sadan button"> <p>CARS</p> </button>
   <button type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
@@ -88,7 +129,7 @@
   <div class = "calc"><button type="button" name="button"> $ </button> <p>LOAN</p> </div>
   <div class = "calc"><button type="button" name="button"> $ </button> <p>TRADE-IN</p> </div>
 </div>
-<hr size= '4px' width= '1000vw' color= '#d25353'>
+<hr size= '4px' width= '90%' color= '#d25353'>
 <div id = "timeGrid"class="gridContainer">
   <div class="grid">
     <div class="hours">
@@ -96,7 +137,7 @@
       <hr id = "hr1" size= '4px' width= '100vw' color= '#d25353'>
       <p>7800 Refugee Rd, Pickerington OH, 43147<br>(614)830-2700</p>
       <hr  size= '4px' width= '80vw' color= '#d25353'>
-      <div class="grid">
+      <div class="staticGrid">
         <div class="days">
           <p>Monday</p>
           <p>Tuesday</p>
@@ -122,7 +163,8 @@
   </div>
 </div>
 
-
+<br>
+<br>
 </main>
 
 <footer>
