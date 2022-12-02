@@ -43,20 +43,57 @@ footer{
   height: auto;
   padding-bottom: 3vw;
   padding-top: 1vw;
+  min-height: 30px;
 }
 .bottomBanner h1{
-  padding-bottom: -50px;
   letter-spacing: .2rem;
   margin:0;
   font-family: raleway, sans-serif;
   font-style: normal;
   font-weight: 500;
   float: left;
+  margin: auto;
   margin-left: 20px;
-  font-size: 4vw;
+  font-size: min(4vw, 72px);
   color: white;
 
 }
 .bottomBanner p{
   margin:0;
+    float: right;
+    color: white;
+    margin-right: 15px;
+}
+.bottomBanner p a{
+  text-decoration: underline;
+}
+a img{
+  min-width: 30px;
+  width: 4vw;
+  height: auto;
+}
+.socials{
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 1000px){
+  .siteMap{
+    margin-top: -6vw;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .pentaGrid{
+    display: block;
+  }
+  .siteSection h2{
+    font-size: 6vw
+  }
+  .siteSection ul{
+    font-size: 3vw;
+    margin-bottom: 50px;
+  }
+  .siteSection ul li{
+    margin-top: -5px;
+  }
 }
