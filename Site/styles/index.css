@@ -4,6 +4,26 @@
   display: inline-block;
   max-width: 240px;/*170*/
 }
+.welcome{
+  position: absolute;
+  top:20px;
+  width: 50vw;
+  height: 18vw;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3vw;
+  font-size: 2.5vw;
+  color: black;
+}
+@media (max-width: 1000px){
+  .welcome{
+    display: none;
+  }
+}
 .carOptions button{
   vertical-align:top;
   height: 15vw;
@@ -82,6 +102,11 @@ button:hover{
     font-size: 56px;
     border-radius: 20px;
 
+  }
+}
+@media(min-width: 1580px) {
+  #headerImg{
+    margin-top: -13vw;
   }
 }
 @media screen and (min-width: 1600px){

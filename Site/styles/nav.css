@@ -2,7 +2,9 @@
   --bgColor:#1e556f ;
   --hoverColor: #4f7a8e;
 }
-
+.marginTop{
+  margin-top: 30px;
+}
 body {
  margin: 0;
  padding: 0;
@@ -43,22 +45,45 @@ nav{
   position: relative;
   top: 25%;
 }
-#logoArea{
+.logoArea{
+  margin-top: -40px;
   float: left;
   display: inline-block;
 }
-#logoArea img{
-  margin-top: -30px;
-  width: 280px;
+.logoArea:hover{
+  background-color: transparent;
+  cursor: pointer;
+}
+.logoArea img{
+  margin-top: 15px;
+  width: 160px;
   height: auto;
   float: left;
 }
-#logoArea h1{
+.logoArea h1{
+  font-weight: 500;
   color: white;
   margin-top: 10px;
   float: left;
   font-family: raleway, sans-serif;
+  font-size: 42px;
+  margin-left: -25px;
+}
+.mobileLogo{
+  margin-top: -20px;
+  margin-bottom: -30px;
+  padding-bottom: 0;
+}
+.mobileLogo h1{
   font-size: 36px;
+}
+.mobileLogo img{
+  margin-top: 10px;
+  padding-bottom: 0;
+  position: relative;
+  width: 120px;
+  height: auto;
+  z-index: 100000;
 }
 .desktop-content{
   display:inline-block;
@@ -107,7 +132,7 @@ nav{
   display: none;
   float: left;
   text-align: left;
-  margin-top: 70px;
+  margin-top: -0px;
   background-color: var(--bgColor);
   width: 100%;
 
@@ -155,6 +180,9 @@ nav a:hover{
 }
 @media only screen and (min-width: 1111px){
 .nav-mobile-contnet {
+  display: none;
+}
+.mobileLogo{
   display: none;
 }
 }
