@@ -1,0 +1,7 @@
+.options{
+  display: inline-block;
+}
+.questionGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
