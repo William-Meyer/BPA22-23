@@ -6,6 +6,7 @@ footer{
   background: #f0f2f4;
   margin-bottom: 0;
   padding-bottom: 0;
+    font-family: highgate, sans-serif;
 }
 .siteMap{
   padding-top: 50px;
@@ -59,7 +60,8 @@ footer{
 
 }
 .bottomBanner p{
-  margin:0;
+    font-size: min(1.5vw, 28px);
+    margin:0;
     float: right;
     color: white;
     margin-right: 15px;
