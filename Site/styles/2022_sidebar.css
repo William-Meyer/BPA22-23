@@ -1,0 +1,89 @@
+.sideBarContainer{
+  margin-top: 50px;
+  font-family: 'work sans', sans-serif;
+  font-weight: 600;
+  background:#595959 ;
+  position: relative;
+	width: 80%;
+  z-index: 3;
+  box-shadow: 0px 5px 10px #262A2B;
+  font-size: 20px;
+  z-index: 3;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+#barList{
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  padding-left: 0;
+}
+#barList li a{
+  text-align: center;
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #595959 ;
+  color: #ffffff;
+  text-decoration: none;
+}
+#barList li a:visited{
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #595959 ;
+  color: #ffffff;
+  text-decoration: none;
+}
+#barList li a:hover,
+#barList li a:visited:hover {
+  background: #808080 ;
+  color: #ffffff;
+}
+#bar-toggle{
+  text-decoration: none;
+}
+#bar-toggle h2{
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 5px;
+}
+.side-dropdown-list{
+  list-style: none;
+  display: none;
+  font-size: 14px;
+}
+.side-dropdown-list li a{
+text-align: right;
+line-height: 30px !important;
+}
+.side-dropdown-list li a{
+text-align: right;
+padding-bottom: 50px !important;
+}
+
+.sidebarArrow{
+  display: inline-block !important;
+}
+@media (max-width: 1000px){
+  .sideBarContainer{
+    margin-left: 0px;
+    margin-top:0;
+    width: 100%;
+  }
+  #barList{
+    display: none;
+  }
+  #bar-toggle h2{
+    text-align: center;
+    font-size: 24px;
+  }
+}

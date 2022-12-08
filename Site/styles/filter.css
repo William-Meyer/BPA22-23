@@ -1,0 +1,22 @@
+main{
+  padding-top: 70px;
+}
+.sideBar{
+  margin-top: 0;
+  height: 100%;
+}
+.filterGrid{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-right: 30px;
+}
+.content{
+  margin-top: 50px;
+  background-color: red;
+}
+@media (max-width:1000px){
+  .filterGrid{
+    display: block;
+  }
+}
