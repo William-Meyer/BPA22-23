@@ -1,4 +1,6 @@
-
+*{
+  scroll-behavior: smooth;
+}
 main{
   background: #f0f2f4;
   align-items: center;
@@ -7,6 +9,7 @@ main{
   color: #1e556f;
 }
 #headerImg{
+  z-index: 10;
   width: 100%;
   height: auto;
   margin-bottom: 0;
@@ -17,3 +20,10 @@ main{
     margin-top: -13vw;
   }
 }
+.scale{
+transition: .2s ease-in-out 0s;
+}
+.scale:hover{
+   cursor: pointer;
+   transform: scale(1.15);
+   }

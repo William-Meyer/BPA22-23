@@ -25,8 +25,73 @@ main{
 fieldset{
   height: 50px;
   font-size: min(3vw, 18px);
-  padding-bottom:20px;
+  padding-bottom:40px;
 }
 #headerImg{
   margin-bottom: 50px;
+}
+#quizButton{
+  width: 25vw;
+  max-width: 400px;
+  height: 4vw;
+  max-height: 50px;
+  background-color: #d25353;
+  border-radius: 1vw;
+  font-family: highgate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: min(1.5vw, 24px);
+  color: #f0f2f4;
+}
+#submit{
+  max-height: 100px;
+  width: 300px;
+  height:100px;
+  font-size: 36px;
+  border-radius: 20px;
+  background-color: #013f5b;
+  color: white;
+}
+@media (max-width: 1000px){
+  #quizButton{
+    max-height: 100px;
+    width: 300px;
+    height:150px;
+    font-size: 36px;
+    border-radius: 20px;
+
+  }
+}
+@media screen and (min-width: 1600px){
+  #quizButton{
+    border-radius: 10px;
+  }
+}
+#headerImg{
+  position: relative;
+}
+.topCard{
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+  width:90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  background-color: white;
+  border-radius: 10px;
+}
+hr{
+  margin-bottom: 70px;
+}
+input{
+  width: 20px;
+  height: 20px;
+}
+input:hover{
+  cursor: pointer;
 }
