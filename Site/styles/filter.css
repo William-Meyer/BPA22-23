@@ -18,5 +18,7 @@ main{
 @media (max-width:1000px){
   .filterGrid{
     display: block;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

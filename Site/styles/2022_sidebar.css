@@ -52,13 +52,19 @@
   text-decoration: none;
 }
 #bar-toggle h2{
-  font-size: 16px;
+  font-size: 32px;
   color: #1e556f;
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   text-align: left;
   margin-left: 5px;
+  width: 80%;
+}
+#bar-toggle img{
+  float: left;
+  width: 32px;
+  height: auto;
 }
 .side-dropdown-list{
   list-style: none;
@@ -83,12 +89,33 @@ padding-bottom: 50px !important;
     margin-left: 0px;
     margin-top:0;
     width: 100%;
+    padding-bottom: 20px;
   }
   #barList{
     display: none;
   }
   #bar-toggle h2{
+    float: none;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 0px;
+  }
+  #bar-toggle img{
+    float: none;
+  }
+  #bar-toggle a{
+    display: inline-block;
+  }
+  /*.sideBarContainer hr{
+    display: none;
+  }*/
+
+    .sideBar {
+    /* margin-left: 30px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 30px; */
+    margin-left: auto;
+    width: 90%;
+    margin-right: auto;
   }
 }
