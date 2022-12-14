@@ -13,7 +13,8 @@ main{
 }
 .content{
   margin-top: 50px;
-  background-color: red;
+  background-color: white;
+  display: inline-block;
 }
 @media (max-width:1000px){
   .filterGrid{
@@ -21,4 +22,13 @@ main{
     margin-right: 0;
     margin-left: 0;
   }
+}
+.card{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin:10px;
+  margin-left: 0;
+  margin-right: 0;
+
 }
