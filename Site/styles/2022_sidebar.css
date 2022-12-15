@@ -71,9 +71,11 @@
   display: none;
   font-size: 14px;
 }
-.side-dropdown-list li a{
-text-align: right;
-line-height: 30px !important;
+.side-dropdown-list li{
+  text-align: left;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: black;
 }
 .side-dropdown-list li a{
 text-align: right;

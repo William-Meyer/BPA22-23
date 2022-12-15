@@ -16,19 +16,54 @@ main{
   background-color: white;
   display: inline-block;
 }
+.card{
+  border: solid 3px #013f5b;
+  float: left;
+  width: 200px;
+  height: 230px;
+  background-color: white;
+  margin:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.card img{
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+}
+.cardInfo{
+  margin-top: -10px;
+  margin-top: 0;
+  height:30px;
+  width:100%;
+  border-top: solid 3px #013f5b;
+}
+.cardInfo p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  margin-left: 5px;
+}
 @media (max-width:1000px){
   .filterGrid{
     display: block;
     margin-right: 0;
     margin-left: 0;
   }
-}
-.card{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  margin:10px;
-  margin-left: 0;
-  margin-right: 0;
-
+  .card{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height:370px;
+    margin-top: 100px;
+  }
+  .card p{
+    font-size: 28px;
+    margin-top: 15px;
+  }
+  .content{
+    width:90%;
+  }
 }
