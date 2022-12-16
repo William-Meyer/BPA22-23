@@ -64,6 +64,11 @@
   </nav>
 
 <main>
+  <div id="searchWrap">
+    <input class="no-outline" type="text" id="search" onkeyup="searchTyping()" placeholder="Search by Make, Model or Keyword">
+    <img src="../imgs/blueSearch.png" alt="search icon">
+  </div>
+
   <div class="filterGrid">
     <div class="sideBar offWhite">
       <div class="sideBarContainer">
@@ -98,10 +103,7 @@
             <a href="javascript:;">Model <div class = "sidebarArrow"><strong>⌵</strong></div></a></a>
             <div class="side-drop-content">
               <ul class = "side-dropdown-list">
-                <li><a>Ch.2</a></li>
-                <li><a>Ch.3</a></li>
-                <li><a>Ch.4</a></li>
-                <li><a>Appendix A </a></li>
+                <li><input type="checkbox" id="Toyota" name="Toyota" value="Toyota"><label for="Toyota">Toyota</label></li>
               </ul>
             </div>
           </div>
