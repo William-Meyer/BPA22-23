@@ -67,17 +67,23 @@ main{
 .cardInfo{
   margin-top: -10px;
   margin-top: 0;
-  height:30px;
+  height:70px;
   width:100%;
   border-top: solid 3px #013f5b;
+  display: block;
 }
-.cardInfo p{
-  margin-top: 0;
-  margin-bottom: 0;
+.cardInfo a{
+  color: #1e556f;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
   text-align: left;
   margin-left: 5px;
 }
-@media (max-width:1000px){
+.cardInfo a:hover{
+  cursor: pointer;
+}
+@media (max-width:1000px)+{
   .filterGrid{
     display: block;
     margin-right: 0;
@@ -91,7 +97,7 @@ main{
     height:370px;
     margin-top: 100px;
   }
-  .card p{
+  .card a{
     font-size: 28px;
     margin-top: 15px;
   }

@@ -1,0 +1,47 @@
+footer{
+  bottom:0;
+  margin-bottom: 0;
+}
+main{
+  margin-top: 70px;
+  padding-top: 60px;
+}
+
+
+
+/*--slides css--*/
+.mySlides img{
+  width:80%;
+  margin: auto;
+  height: auto;
+}
+.slideNavigation{
+  display: block;
+}
+.slideNavigation button{
+  display: inline-block;
+  color: white;
+  height: 13vw;
+  width: 5vw;
+  border-radius: 2vw;
+  background-color: #013f5b;
+  box-shadow: 0;
+  border: none;
+  font-size: 5vw
+}
+.slideNavigation button:hover{
+  cursor: pointer;
+}
+.slideNavigation a{
+  padding-top: 10vw;
+}
+.slideNavigation a img{
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.slideNavigation a:hover{
+  cursor: pointer;
+}
