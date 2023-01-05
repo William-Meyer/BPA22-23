@@ -5,6 +5,9 @@ footer{
 main{
   margin-top: 70px;
 }
+.caraContainer img{
+  background-color: white;
+}
 .info h1{
   float: left;
 }
@@ -14,7 +17,12 @@ main{
 .val{
   float: right;
 }
+hr{
+  max-width: 1400px;
+  margin-bottom: 0;
+}
 .gridContainer{
+  margin-top: -50px;
   margin-left: 40px;
   margin-right: 40px;
   display: grid;
@@ -38,6 +46,7 @@ main{
 
 /*--slides css--*/
 .caraContainer{
+  padding-top: 140px;
   margin: auto;
   margin-top: -80px;
   max-width: 1200px;
@@ -84,4 +93,101 @@ main{
 }
 .slideNavigation a:hover{
   cursor: pointer;
+}
+.contact h1{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: -30px;
+  margin-top: 0;
+}
+.contact h2{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+}
+.contact input{
+  border-radius: 23px;
+  border-width: 1px;
+  border-color: #1e556f;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #4f7a8e;
+}
+#fname{
+  width: 45%;
+  height: 45px;
+  float: left;
+  margin-left: 10px;
+  border-radius: 23px;
+  border-width: 1px;
+  border-color: #1e556f;
+}
+#lname{
+  width: 45%;
+  height: 45px;
+  float: right;
+  margin-right: 10px;
+}
+#email{
+  width: 60%;
+  height: 45px;
+  float: left;
+  margin-left: 10px;
+
+}
+#phone{
+  width: 30%;
+  height: 45px;
+  float: right;
+  margin-right: 10px;
+}
+#message{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 23px;
+  border-width: 1px;
+  border-color: #1e556f;
+  font-size: 18px;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+    color: #4f7a8e;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#submit{
+  margin-top: 20px;
+  height: 35px;
+  width: 220px;
+  border-color: none;
+  background-color: #1e556f;
+  border-radius: 10px;
+  color: white;
+  padding: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+#submit h1{
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width:1200px){
+  .gridContainer{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact{
+    margin-top: 100px;
+  }
+  .info{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

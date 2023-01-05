@@ -9,10 +9,12 @@ filename = 'cars.csv'
 outputFile = 'output.txt'
 with open(filename, 'r') as csvfile:
     csvreader = csv.reader(csvfile)
+    i = 0
     for line in csvreader:
         writeToFile('<div class="card">')
         writeToFile('<img src="../imgs/filler.png" alt="'+ line[3]+ ' ' + line[4] +' '+ line[1] + ' ' + line[2]+'">')
         writeToFile('<div class="cardInfo">')
-        writeToFile('<a href = "example.com">'+line[3]+' | '+line[1] +' '+line[2]+'</a>')
+        writeToFile('<a href = "cars/car'+str(i)+'.html">'+line[3]+' | '+line[1] +' '+line[2]+'</a>')
         writeToFile('</div>')
         writeToFile('</div>')
+        i+=1
