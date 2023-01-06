@@ -3,7 +3,6 @@
   $(function() {
     $('.side-dropdown').click(function(){
       var target = $(event.target), article;
-      console.log(target);
       if((target.is('.side-dropdown a'))){
       if($(this).find($('.side-dropdown-list')).is(':visible')){
         $(this).parent().find('.sidebarArrow').css({

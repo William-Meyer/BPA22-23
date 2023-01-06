@@ -2,7 +2,7 @@ classes = [
 {name: 'Audi', tag: ['audi']},
 {name: 'BMW', tag: ['bmw']},
 {name: 'Buick', tag: ['buick']},
-{name: 'Chevrolet', tag: ['chevrolet']},
+{name: 'Chevy', tag: ['chevrolet','chevy']},
 {name: 'Ford', tag: ['ford']},
 {name: 'Honda', tag: ['honda']},
 {name: 'Hyundai', tag: ['hyundai']},
@@ -15,10 +15,10 @@ classes = [
 {name: 'Accord', tag: ['accord']},
 {name: 'Pilot', tag: ['pilot']},
 {name: 'CR-V', tag: ['cr-v']},
-{name: '330-XI', tag: ['330 xi']},
+{name: '330-XI', tag: ['330','xi']},
 {name: 'Corolla', tag: ['corolla']},
 {name: 'Cruze', tag: ['cruze']},
-{name: 'ES-350', tag: ['es 350']},
+{name: 'ES-350', tag: ['es','350']},
 {name: 'F-150', tag: ['f-150']},
 {name: 'Forester', tag: ['forester']},
 {name: 'Lucerne', tag: ['lucerne']},
@@ -52,8 +52,8 @@ classes = [
 {name: 'Green', tag: ['green']},
 {name: 'Silver', tag: ['silver']},
 {name: 'White', tag: ['white']}
-]
-let searchClasses = []
+];
+let searchClasses = [];
 function searchTyping(){
   searchClasses = []
   input = document.getElementById('search');
@@ -62,10 +62,31 @@ function searchTyping(){
   for (const word of words) {
   const index = classes.findIndex(obj => obj.tag.includes(word));
   if (index !== -1) {
-    console.log(`The word "${word}" was found at index ${index} in the array.`);
-  } else {
-    console.log(`The word "${word}" was not found in the array.`);
+    searchClasses.push(index);
   }
 }
-  console.log(words);
 }
+function removeItemOnce(arr, value) {
+  var index = arr.indexOf(value);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+
+let checkClasses = [];
+window.onload = function(){
+  document.querySelector('#sideID').onclick = function(ev) {
+    if(ev.target.value && ev.target.type == "checkbox") {
+      console.log('test')
+      if(ev.target.checked){
+        console.log(ev.target.name);
+        checkClasses.push( ev.target.name);
+      }
+      else{
+        checkClasses = removeItemOnce(checkClasses, ev.target.name);
+      }
+      console.log(checkClasses);
+    }
+  }  // your code
+};
