@@ -1,5 +1,5 @@
 classes = [
-  [  {name: 'Audi', tag: ['audi'], type: 'make'},
+    {name: 'Audi', tag: ['audi'], type: 'make'},
     {name: 'BMW', tag: ['bmw'], type: 'make'},
     {name: 'Buick', tag: ['buick'], type: 'make'},
     {name: 'Chevy', tag: ['chevrolet','chevy'], type: 'make'},
@@ -36,14 +36,14 @@ classes = [
     {name: 'Diesel', tag: ['diesel'], type: 'fuel'},
     {name: 'Hybrid', tag: ['hybrid'], type: 'fuel'},
     {name: 'Electric', tag: ['electric'], type: 'fuel'},
-    {name: '0-30,000', tag: ['0-30000'], type: 'mileage'},
-    {name: '30,001-60,000', tag: ['30001-60000'], type: 'mileage'},
-    {name: '60,001-90,000', tag: ['60001-90000'], type: 'mileage'},
-    {name: '90,001-120,000', tag: ['90001-120000'], type: 'mileage'},
-    {name: '120,001-150,000', tag: ['120001-150000'], type: 'mileage'},
-    {name: '150,001-180,000', tag: ['150001-180000'], type: 'mileage'},
-    {name: '180,001-210,000', tag: ['180001-210000'], type: 'mileage'},
-    {name: '210,001-240,000', tag: ['210001-240000'], type: 'mileage'},
+    {name: '0-30000', tag: ['0-30000'], type: 'mileage'},
+    {name: '30001-60000', tag: ['30001-60000'], type: 'mileage'},
+    {name: '60001-90000', tag: ['60001-90000'], type: 'mileage'},
+    {name: '90001-120000', tag: ['90001-120000'], type: 'mileage'},
+    {name: '120001-150000', tag: ['120001-150000'], type: 'mileage'},
+    {name: '150001-180000', tag: ['150001-180000'], type: 'mileage'},
+    {name: '180001-210000', tag: ['180001-210000'], type: 'mileage'},
+    {name: '210001-240000', tag: ['210001-240000'], type: 'mileage'},
     {name: 'Black', tag: ['black'], type: 'color'},
     {name: 'Blue', tag: ['blue'], type: 'color'},
     {name: 'Brown', tag: ['brown'], type: 'color'},
@@ -54,6 +54,65 @@ classes = [
     {name: 'White', tag: ['white'], type: 'color'}
 ];
 let searchClasses = [];
+let checkClasses = [];
+function search(){
+  let toShow = []
+  $('.card').css('display','none');
+  if(searchClasses.length == 0 && checkClasses.length == 0){
+    $('.card').css('display','block');
+    return;
+  }
+  let searchTypes = []
+  if(searchClasses.length>0){
+    for(let i = searchClasses.length-1; i>-1; i--){
+      type = searchClasses[i].type
+      console.log('type: '+type)
+      if(searchTypes.includes(type)){
+        searchClasses.splice(i,i);
+      }
+      else{
+        searchTypes.push(type);
+      }
+    }
+  }
+  for(let i = 0; i < checkClasses.length; i++){
+    if(searchTypes.includes(checkClasses[i].type)){
+      checkClasses.splice(i,i)
+    }
+  }
+  let namesToShowCheck = [];
+  let namesToShowSearch = [];
+  for(let i = 0; i<checkClasses.length; i++){
+    namesToShowCheck.push(checkClasses[i].name);
+  }
+  for(let i = 0; i<searchClasses.length; i++){
+    namesToShowSearch.push(searchClasses[i].name);
+  }
+  console.log('check: '+namesToShowCheck);
+  console.log('search: '+ namesToShowSearch);
+  theCards = document.getElementsByClassName('card')
+  for(let i = 0; i<theCards.length; i++){
+    el = theCards[i];
+    classList = el.classList;
+    id = el.id
+    canShowSearch = false
+    canShowCheck = false
+    for(let j = 0; j<classList.length;j++){
+      let c = classList[j];
+      if(namesToShowSearch.includes(c) || namesToShowSearch.length<1){
+        canShowSearch = true;
+      }
+      if(namesToShowCheck.includes(c) || namesToShowCheck.length<1){
+        canShowCheck = true;
+      }
+    }
+    if(canShowCheck && canShowSearch){
+      $('#'+id).css('display','block');
+    }
+  }
+}
+
+
 function searchTyping(){
   searchClasses = []
   input = document.getElementById('search');
@@ -62,9 +121,10 @@ function searchTyping(){
   for (const word of words) {
   const index = classes.findIndex(obj => obj.tag.includes(word));
   if (index !== -1) {
-    searchClasses.push(index);
+    searchClasses.push(classes[index]);
   }
 }
+search();
 }
 function removeItemOnce(arr, value) {
   var index = arr.indexOf(value);
@@ -73,20 +133,28 @@ function removeItemOnce(arr, value) {
   }
   return arr;
 }
-
-let checkClasses = [];
 window.onload = function(){
   document.querySelector('#sideID').onclick = function(ev) {
     if(ev.target.value && ev.target.type == "checkbox") {
-      console.log('test')
       if(ev.target.checked){
-        console.log(ev.target.name);
-        checkClasses.push( ev.target.name);
+        for(let i = 0; i<classes.length;i++){
+          if (classes[i].name == ev.target.name){
+            checkClasses.push(classes[i]);
+          }
+        }
+
+      }
+      else if(checkClasses.length>1){
+        for(let i = 0; i<checkClasses.length; i++){
+          if(checkClasses[i].name == ev.target.name){
+            checkClasses.splice(i,i)
+          }
+        }
       }
       else{
-        checkClasses = removeItemOnce(checkClasses, ev.target.name);
+        checkClasses = [];
       }
-      console.log(checkClasses);
+      search();
     }
   }  // your code
 };
