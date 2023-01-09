@@ -94,19 +94,23 @@ function search(){
   for(let i = 0; i<theCards.length; i++){
     el = theCards[i];
     classList = el.classList;
+    console.log(classList)
     id = el.id
-    canShowSearch = false
-    canShowCheck = false
-    for(let j = 0; j<classList.length;j++){
-      let c = classList[j];
-      if(namesToShowSearch.includes(c) || namesToShowSearch.length<1){
-        canShowSearch = true;
-      }
-      if(namesToShowCheck.includes(c) || namesToShowCheck.length<1){
-        canShowCheck = true;
+    canShowSearch = true
+    canShowCheck = true
+    for(let j = 0; j<namesToShowSearch.length; j++){
+      searchFor = namesToShowSearch[j]
+      if(!(classList.contains(searchFor))){
+        canShowSearch = false;
       }
     }
-    if(canShowCheck && canShowSearch){
+    for(let j = 0; j<namesToShowCheck.length; j++){
+      searchFor = namesToShowCheck[j]
+      if(!(classList.contains(searchFor))){
+        canShowCheck = false;
+      }
+    }
+    if((canShowCheck || canShowCheck.length<1) && (canShowSearch || canShowSearch.length<1)){
       $('#'+id).css('display','block');
     }
   }
