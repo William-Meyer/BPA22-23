@@ -1,0 +1,89 @@
+main{
+  padding-bottom:100px;
+}
+.topCard{
+  margin-top: -100px;
+}
+.topCard p{
+  font-size: 22px;
+  color: #1e556f;
+}
+.people{
+  width: 90%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.person{
+  display: inline-block;
+  color: #1e556f;
+  margin-left:10px;
+  margin-right:10px;
+  }
+.person img{
+  width: 90%;
+  height: auto;
+}
+
+#hr1{
+  max-width: 1450px;
+  margin-bottom: 100px;
+}
+.grid{
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1700px;
+}
+.grid img{
+  margin-right: 50px;
+  height: 500px;
+  width: auto;
+}
+.contact{
+  margin-right: 50px;
+  height: 500px;
+  width: auto;
+  background-color: white;
+}
+.contact h1{
+  margin-top: 50px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.contact h2{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.socialss{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+.socialss a{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+.socialss a img{
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 60px;;
+}
+@media(max-width:1300px){
+  .person{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid{
+    display: block;
+  }
+}
