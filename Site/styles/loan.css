@@ -8,6 +8,36 @@
   vertical-align:top;
   padding-bottom: 30px;
 }
+.card h3{
+  color: black;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#amount{
+  letter-spacing: 5px;
+  font-size: 48px;
+}
+#monthly{
+  font-size: 30px;
+}
+#loan{
+  text-align: left;
+  margin-left: 20px;
+  margin-top:60px;
+  font-weight: 500;
+}
+#total{
+  font-weight: 500;
+  margin-right: 40px;
+}
+#breakdown{
+  text-align: left;
+  color: black;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .card h2{
   color: black;
   font-size: 18px;
@@ -64,6 +94,40 @@
   font-size: 24px;
   font-weight: 500;
 }
+.results button{
+  background-color: #1e556f;
+  color: white;
+  border: none;
+  width: 70%;
+  margin-top: 70px;
+  border-radius: 10px;
+  margin-bottom: 31px;
+}
+.breakdownList{
+  line-height: 1.25;
+}
+#calc{
+  margin-left: 20px;
+  float: left;
+  background-color: #1e556f;
+  margin-top: 40px;
+  width: 50%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+}
+#calc h1{
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 36px;
+}
+.results button h1{
+    font-weight: 500;
+}
 button:hover{
   cursor: pointer;
+}
+#hr1{
+  margin-top: 100px;
 }
