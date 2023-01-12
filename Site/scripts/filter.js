@@ -82,8 +82,8 @@ classes = [
 let searchClassesGlobal = [];
 let checkClassesGlobal = [];
 function search(){
-  let checkClasses = checkClassesGlobal;
-  let searchClasses = searchClassesGlobal;
+  let checkClasses = checkClassesGlobal.map(obj => obj);
+  let searchClasses = searchClassesGlobal.map(obj => obj);
   let toShow = []
   $('.card').css('display','none');
   if(searchClasses.length == 0 && checkClasses.length == 0){
@@ -94,9 +94,8 @@ function search(){
   if(searchClasses.length>0){
     for(let i = searchClasses.length-1; i>-1; i--){
       type = searchClasses[i].type
-      console.log('type: '+type)
       if(searchTypes.includes(type)){
-        searchClasses.splice(i,i);
+        searchClasses.splice(i,i+1);
       }
       else{
         searchTypes.push(type);
@@ -169,7 +168,7 @@ window.onload = function(){
     if(ev.target.value && ev.target.type == "checkbox") {
       if(ev.target.checked){
         for(let i = 0; i<classes.length;i++){
-          if (classes[i].name == ev.target.name){
+          if (classes[i].name == ev.target.name  && !(checkClassesGlobal.includes(classes[i]))){
             checkClassesGlobal.push(classes[i]);
           }
         }
@@ -178,7 +177,7 @@ window.onload = function(){
       else if(checkClassesGlobal.length>1){
         for(let i = 0; i<checkClassesGlobal.length; i++){
           if(checkClassesGlobal[i].name == ev.target.name){
-            checkClassesGlobal.splice(i,i)
+            checkClassesGlobal.splice(i,i+1)
           }
         }
       }
