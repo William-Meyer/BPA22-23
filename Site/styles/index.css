@@ -149,8 +149,10 @@ p{
   margin-top: -40px;
   height: auto;
   width: 100%;
+  margin-left: 20px;
 }
 .hours{
+  margin-right: 20px;
   margin-left: 20%;
   width: 80%;
   background-color: white;
@@ -162,6 +164,14 @@ p{
   .hours{
     margin: auto;
     max-height: 750px;
+    margin-top: 50px;
+  }
+  #ohio{
+    width: 70vw;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .hours p{
