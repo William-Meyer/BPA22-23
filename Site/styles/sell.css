@@ -1,0 +1,167 @@
+main{
+  padding-bottom: 150px;
+}
+#now{
+  margin-top: 80px;
+  margin-bottom: 100px;
+  font-size: 36px;
+  letter-spacing: 13px;
+}
+.card{
+  padding-top: 1px;
+  background-color: White;
+  width:70vw;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  position: relative;
+  z-index: 1000;
+  text-align:left;
+  padding-bottom:30px;
+  margin-bottom: 50px;
+}
+.card h1{
+  margin-left: 40px;
+  font-size: 48px;
+  text-align: left;
+}
+.line{
+  margin-left: 40px;
+  text-align: left;
+}
+.line{
+  align-items: left;
+}
+.card input{
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 5px;
+  border-width: 1px;
+  height:45px;
+  border-color: #1e556f;
+  border-radius: 15px;
+  border-style: solid;
+  margin-bottom: -5px;
+}
+#name{
+  width: 215px;
+}
+#lName{
+  width: 215px;
+}
+#email{
+  width: 267px;
+}
+#phone{
+  width:163px;
+}
+#make{
+  width: 150px;
+}
+#model{
+  width:150px;
+}
+#year{
+  width: 150px;
+}
+#message{
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 0;
+  margin-left: 40px;
+  text-align: left;
+  border-color: #1e556f;
+  border-width: 1px;
+  height: 80px;
+  width: 460px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+button{
+  display: block;
+  text-align: center;
+  width: 220px;
+  height: 35px;
+  background-color: #1e556f;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+}
+#hr1{
+  max-width: 950px;
+}
+::placeholder{
+  color:#4f7a8e;
+}
+.cirlces{
+  display: inline-block;
+}
+.circleC{
+  margin-left: 70px;
+  margin-right: 70px;
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+}
+.circleC h2{
+  font-weight: 200;
+  font-size: 20px;
+}
+.circle{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 125px;
+  height: 125px;
+  border-radius: 75px;
+  border-color:#1e556f;
+  border-width: 2px;
+  border-style: solid;
+}
+.circle h1{
+  margin-left: 3px;
+  margin-top: 18px;
+  font-size: 72px;
+  font-weight: 100;
+}
+.reveal{
+  line-height: 1.75;
+  margin-top: -50px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  display: none;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.reveal h2{
+  color: Black;
+  font-weight: 700;
+}
+.reveal p{
+  color: black;
+  line-height: 2.25;
+}
+.reveal button{
+  height: 60px;
+  width: 300px;
+  letter-spacing: 4px;
+}
+@media(max-width:1050px){
+  .circleC{
+    margin-bottom: 70px;
+    display: block;
+  }
+}
+@media(max-width:800px){
+  .line input{
+    display: block;
+    margin-bottom: 20px;
+  }
+}

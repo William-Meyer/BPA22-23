@@ -168,6 +168,7 @@ hr{
   padding: 0;
   padding-top: 0;
   margin-bottom: 20px;
+  border-style: none;
 }
 #submit h1{
   font-weight: normal;
@@ -175,6 +176,45 @@ hr{
   letter-spacing: 10px;
   margin-top: 0;
   margin-bottom: 0;
+}
+.reveal{
+  margin-top: 50px;
+  display: none;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.reveal h2{
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  font-size:24px;
+  margin-top:0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+#data{
+  font-weight: 700;
+}
+.reveal p{
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.reveal button{
+  margin-bottom: 40px;
+  font-size: 24px;
+  width: 400px;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 200;
+  height: 50px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #1e556f;
 }
 @media (max-width:1200px){
   .gridContainer{

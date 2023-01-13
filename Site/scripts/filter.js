@@ -103,8 +103,10 @@ function search(){
     }
   }
   for(let i = 0; i < checkClasses.length; i++){
+    console.log(checkClasses[i]);
     if(searchTypes.includes(checkClasses[i].type)){
-      checkClasses.splice(i,i)
+      checkClasses.splice(i,1)
+      i = i-1;
     }
   }
   let namesToShowCheck = [];
@@ -142,8 +144,30 @@ function search(){
   }
 }
 
-
+let startUpChecked = false;
 function searchTyping(){
+  if(!startUpChecked){
+    var param = window.location.href.split("?")[1];
+    switch (param) {
+      case 'chk=Sedan':
+        checkClassesGlobal.push({name: 'Sedan', tag: ['sedan'], type: 'body'});
+        break;
+      case 'chk=SUV':
+        checkClassesGlobal.push({name: 'SUV', tag: ['suv'], type: 'body'});
+        break;
+      case 'chk=Truck':
+        checkClassesGlobal.push({name: 'Truck', tag: ['truck'], type: 'body'});
+        break;
+      case 'chk=Van':
+        checkClassesGlobal.push({name: 'Van', tag: ['van'], type: 'body'});
+        break;
+      case 'chk=Electric':
+        checkClassesGlobal.push({name: 'Electric', tag: ['electric'], type: 'fuel'});
+        break;
+      default:
+        break;}
+        startUpChecked = true;
+  }
   searchClassesGlobal = []
   input = document.getElementById('search');
   text = input.value.toLowerCase();
@@ -164,8 +188,60 @@ function removeItemOnce(arr, value) {
   return arr;
 }
 window.onload = function(){
+  if(window.location.href.includes("?")){
+    $('.card').css('display','none');
+    var param = window.location.href.split("?")[1];
+    switch (param) {
+      case 'chk=Sedan':
+        $("#Sedan").prop("checked", true);
+        $('.Sedan').css('display','block');
+        break;
+      case 'chk=SUV':
+        $("#SUV").prop("checked", true);
+        $('.SUV').css('display','block');
+        break;
+      case 'chk=Truck':
+        $("#Truck").prop("checked", true);
+        $('.Truck').css('display','block');
+        break;
+      case 'chk=Van':
+        $("#Van").prop("checked", true);
+        $('.Van').css('display','block');
+        break;
+      case 'chk=Electric':
+        $("#Electric").prop("checked", true);
+        $('.Electric').css('display','block');
+        break;
+      default:
+        break;}
+  }
   document.querySelector('#sideID').onclick = function(ev) {
     if(ev.target.value && ev.target.type == "checkbox") {
+      if(!(window.location.href.includes('?'))){
+        startUpChecked = true;
+      }
+      if(!startUpChecked){
+        var param = window.location.href.split("?")[1];
+        switch (param) {
+          case 'chk=Sedan':
+            checkClassesGlobal.push({name: 'Sedan', tag: ['sedan'], type: 'body'});
+            break;
+          case 'chk=SUV':
+            checkClassesGlobal.push({name: 'SUV', tag: ['suv'], type: 'body'});
+            break;
+          case 'chk=Truck':
+            checkClassesGlobal.push({name: 'Truck', tag: ['truck'], type: 'body'});
+            break;
+          case 'chk=Van':
+            checkClassesGlobal.push({name: 'Van', tag: ['van'], type: 'body'});
+            break;
+          case 'chk=Electric':
+            checkClassesGlobal.push({name: 'Electric', tag: ['electric'], type: 'fuel'});
+            break;
+          default:
+            break;}
+            startUpChecked = true;
+      }
       if(ev.target.checked){
         for(let i = 0; i<classes.length;i++){
           if (classes[i].name == ev.target.name  && !(checkClassesGlobal.includes(classes[i]))){
@@ -184,7 +260,9 @@ window.onload = function(){
       else{
         checkClassesGlobal = [];
       }
-      search();
+      if(startUpChecked){
+              search();
+      }
     }
   }  // your code
 };

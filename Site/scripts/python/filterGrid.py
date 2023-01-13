@@ -17,7 +17,7 @@ with open(filename, 'r') as csvfile:
         else:
             name = line[2]
         writeToFile('<div id = "car'+line[0]+'" class="card ' + line[1] + ' ' + line[2] + ' ' + line[3] + ' ' + line[4] + ' ' + line[5] + ' ' + line[6] + ' ' + line[8] + ' ' + line[9] + ' ' + line[10] + '">')
-        writeToFile('<img src="../imgs/filler.png" alt="'+ line[3]+ ' ' + line[4] +' '+ line[1] + ' ' + name+'">')
+        writeToFile('<img src="../imgs/cars/car'+str(line[0])+'-1.jpg" alt="'+ line[3]+ ' ' + line[4] +' '+ line[1] + ' ' + name+'">')
         writeToFile('<div class="cardInfo">')
         writeToFile('<a href = "cars/car'+str(i)+'.html">'+line[3]+' | '+line[1] +' '+name+'</a>')
         writeToFile('</div>')

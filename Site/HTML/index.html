@@ -17,49 +17,50 @@
     <script type="text/javascript" src = ../scripts/nav.js></script>
     <script type="text/javascript" src = ../scripts/slides.js></script>
   </head>
-  <nav id ="navBar">
-    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-    <a class="logoArea mobileLogo">
-      <img src="../imgs/logoCropped.png" alt="">
-      <h1><Strong>Car</strong>tegrity</h1>
-    </a>
-    <div class="nav-mobile-contnet">
-      <ul>
-        <li class = "mobile-drop-link marginTop"><a href="javascript:;">&ensp;BUY<div class = "arrow">▾</div></a>
-        <div class="mobile-drop-container">
-            <ul class = "mobile-drop-content">
-              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
-              <li> <a href="#" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
-            </ul>
-        </div>
-        </li>
-        <li><a href="#" class="mobile-link">&ensp;SELL</a></li>
-        <li><a href="#" class="mobile-link">&ensp;ABOUT US</a></li>
-      </ul>
-    </div>
-    <div id="nav-desktop">
-      <a class="logoArea">
-        <img src="../imgs/logoCropped.png" alt="">
+  <body>
+    <nav id ="navBar">
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <a href="index.html" class="logoArea mobileLogo">
+        <img src="../imgs/logoCropped.png" alt="cartegrity logo">
         <h1><Strong>Car</strong>tegrity</h1>
       </a>
-      <div class="desktop-content">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ABOUT US</a>
-      </div>
-      <div class="desktop-content">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SELL</a>
-      </div>
-      <div class="dropdown-desktop">
-        <div class="dropdown-hover">
-        <a class = "dropdownLink" href="javascript:;">BUY <div class = "arrow">▾</div></a>
-        <ul class = "dropdown-content-desktop">
-          <li> <a href="#">FINANCING</a> </li>
-          <li> <a href="#">FIND YOUR CAR</a> </li>
+      <div class="nav-mobile-contnet">
+        <ul>
+          <li class = "mobile-drop-link marginTop"><a href="javascript:;">&ensp;BUY<div class = "arrow">▾</div></a>
+          <div class="mobile-drop-container">
+              <ul class = "mobile-drop-content">
+                <li> <a href="financing.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
+                <li> <a href="filter.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
+              </ul>
+          </div>
+          </li>
+          <li><a href="sell.html" class="mobile-link">&ensp;SELL</a></li>
+          <li><a href="about.html" class="mobile-link">&ensp;ABOUT US</a></li>
         </ul>
       </div>
+      <div id="nav-desktop">
+        <a href='index.html' class="logoArea">
+          <img src="../imgs/logoCropped.png" alt="">
+          <h1><Strong>Car</strong>tegrity</h1>
+        </a>
+        <div class="desktop-content">
+          <a href="about.html">ABOUT US</a>
+        </div>
+        <div class="desktop-content">
+          <a href="sell.html">SELL</a>
+        </div>
+        <div class="dropdown-desktop">
+          <div class="dropdown-hover">
+          <a class = "dropdownLink" href="javascript:;">BUY <div class = "arrow">▾</div></a>
+          <ul class = "dropdown-content-desktop">
+            <li> <a href="financing.html">FINANCING</a> </li>
+            <li> <a href="filter.html">FIND YOUR CAR</a> </li>
+          </ul>
+        </div>
+        </div>
       </div>
-    </div>
 
-  </nav>
+    </nav>
 
 <main>
 <img id = "headerImg" src="../imgs/header2.jpg" alt="header banner showing a drawing of a pick up truck">
@@ -72,23 +73,23 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <button type="button" name="button"> <img src="../imgs/car.png" alt="sadan button"> <p>CARS</p> </button>
+    <button onclick = "window.open('filter.html?chk=Sedan','_self');" type="button" name="button"> <img src="../imgs/car.png" alt="sedan button"> <p>CARS</p> </button>
   </div>
 
   <div class="mySlides fade">
-    <button type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
+    <button onclick = "window.open('filter.html?chk=Truck','_self');" type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
   </div>
 
   <div class="mySlides fade">
-    <button type="button" name="button"> <img src="../imgs/suv.png" alt="suv button"> <p>SUVs</p> </button>
+    <button onclick = "window.open('filter.html?chk=SUV','_self');" type="button" name="button"> <img src="../imgs/suv.png" alt="suv button"> <p>SUVs</p> </button>
   </div>
 
   <div class="mySlides fade">
-    <button type="button" name="button"> <img src="../imgs/van.png" alt="van button"> <p>VANS</p> </button>
+    <button onclick = "window.open('filter.html?chk=Van','_self');" type="button" name="button"> <img src="../imgs/van.png" alt="van button"> <p>VANS</p> </button>
   </div>
 
   <div class="mySlides fade">
-    <button type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
+    <button onclick = "window.open('filter.html?chk=Electric','_self');" type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
   </div>
 
   <!-- Next and previous buttons -->
@@ -107,11 +108,11 @@
 </div>
 
 <div class="carOptions">
-  <button class="scale" type="button" name="button"> <img src="../imgs/car.png" alt="sadan button"> <p>CARS</p> </button>
-  <button class="scale" type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
-  <button class="scale" type="button" name="button"> <img src="../imgs/suv.png" alt="suv button"> <p>SUVs</p> </button>
-  <button class="scale" type="button" name="button"> <img src="../imgs/van.png" alt="van button"> <p>VANS</p> </button>
-  <button class="scale" type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
+  <button onclick = "window.open('filter.html?chk=Sedan','_self');" class="scale" type="button" name="button"> <img src="../imgs/car.png" alt="sedan button"> <p>CARS</p> </button>
+  <button onclick = "window.open('filter.html?chk=Truck','_self');" class="scale" type="button" name="button"> <img src="../imgs/truck.png" alt="pick-up truck button"> <p>TRUCKS</p> </button>
+  <button onclick = "window.open('filter.html?chk=SUV','_self');" class="scale" type="button" name="button"> <img src="../imgs/suv.png" alt="suv button"> <p>SUVs</p> </button>
+  <button onclick = "window.open('filter.html?chk=Van','_self');" class="scale" type="button" name="button"> <img src="../imgs/van.png" alt="van button"> <p>VANS</p> </button>
+  <button onclick = "window.open('filter.html?chk=Electric','_self');" class="scale" type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
 </div>
 <h2>FIND YOUR <strong>PERFECT VEHICLE</strong></h2>
 <button class = "scale" id = "quizButton" type="button" name="button">TAKE QUIZ</button>
@@ -163,36 +164,34 @@
 <img src="../imgs/footerimage.png" alt="illustrated side view of a car driving on a road">
   <div class="siteMap pentaGrid">
     <div class="siteSection">
-      <a href="#"><h2>HOME</h2></a>
+      <a href="index.html"><h2>HOME</h2></a>
     </div>
     <div class="siteSection">
-      <a href="#"><h2>BUY</h2></a>
+      <a href="javascript:;"><h2>BUY</h2></a>
       <ul>
-        <li><a href="#">Financing</a></li>
+        <li><a href="financing.html">Financing</a></li>
         <br>
-        <li><a href="#">Find Your Car</a></li>
+        <li><a href="filter.html">Find Your Car</a></li>
       </ul>
     </div>
     <div class="siteSection">
-      <a href="#"><h2>SELL</h2></a>
+      <a href="sell.html"><h2>SELL</h2></a>
     </div>
     <div class="siteSection">
-      <a href="#"><h2>ABOUT US</h2></a>
+      <a href="about.html"><h2>ABOUT US</h2></a>
     </div>
     <div class="siteSection">
-      <a href="#"><h2>SEARCH</h2></a>
+      <a href="filter.html"><h2>SEARCH</h2></a>
     </div>
   </div>
   <div class="bottomBanner">
     <h1><Strong>Car</strong>tegrity</h1>
-      <p>&copy; 2023 BPA Site. All rights reserved. SIte design by Cartegrity<br>Chapter #58-0136, Pickerington High School North. <a>Works Cited</a></p>
+      <p>&copy; 2023 BPA Site. All rights reserved. SIte design by Cartegrity<br>Chapter #58-0136, Pickerington High School North.</p>
       <a><img class = "socials" src="../imgs/instagram.png" alt="Instagram"></a>
     <a><img class = "socials" src="../imgs/twitter.png" alt="twitter"></a>
 
 
   </div>
 </footer>
-
-
-
-  </html>
+</body>
+</html>
