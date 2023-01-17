@@ -21,6 +21,9 @@ hr{
   max-width: 1400px;
   margin-bottom: 0;
 }
+.info hr{
+  background-color: #013f5b;
+}
 .gridContainer{
   margin-top: -50px;
   margin-left: 40px;
@@ -229,5 +232,10 @@ hr{
   .info{
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media(max-width:500px){
+  .slideNavigation button{
+    display: none;
   }
 }

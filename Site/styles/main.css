@@ -50,6 +50,12 @@ main{
     border-radius: 10px;
   }
 }
+hr{
+  height: 4px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: #d25353;
+}
 .scale{
 transition: .2s ease-in-out 0s;
 }

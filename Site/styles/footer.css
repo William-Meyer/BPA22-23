@@ -79,6 +79,9 @@ a img{
   margin-left: 6px;
   margin-right: 6px;
 }
+#fLink{
+  margin-bottom: 20px;
+}
 @media (max-width: 1000px){
   .siteMap{
     margin-top: -6vw;

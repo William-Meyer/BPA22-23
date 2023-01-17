@@ -97,6 +97,7 @@ button{
   max-width: 950px;
 }
 ::placeholder{
+  font-family: highgate, sans-serif;
   color:#4f7a8e;
 }
 .cirlces{

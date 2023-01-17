@@ -164,6 +164,27 @@ function searchTyping(){
       case 'chk=Electric':
         checkClassesGlobal.push({name: 'Electric', tag: ['electric'], type: 'fuel'});
         break;
+        case 'chk=0-4000':
+          checkClassesGlobal.push({name: '0-4000', tag: ['0-4000'], type: 'price'});
+          break;
+        case 'chk=4001-6000':
+          checkClassesGlobal.push({name: '4001-6000', tag: ['4001-6000'], type: 'price'});
+          break;
+        case 'chk=6001-8000':
+          checkClassesGlobal.push({name: '6001-8000', tag: ['6001-8000'], type: 'price'});
+          break;
+        case 'chk=8001-10000':
+          checkClassesGlobal.push({name: '8001-10000', tag: ['8001-10000'], type: 'price'});
+          break;
+        case 'chk=10001-12000':
+          checkClassesGlobal.push({name: '10001-12000', tag: ['10001-12000'], type: 'price'});
+          break;
+        case 'chk=12001-14000':
+          checkClassesGlobal.push({name: '12001-14000', tag: ['12001-14000'], type: 'price'});
+          break;
+        case 'chk=14001a':
+          checkClassesGlobal.push({name: '14001a', tag: ['14001a'], type: 'price'});
+          break;
       default:
         break;}
         startUpChecked = true;
@@ -188,6 +209,10 @@ function removeItemOnce(arr, value) {
   return arr;
 }
 window.onload = function(){
+  var items=document.querySelectorAll('input[type=checkbox]');
+         	for(var i=0; i<items.length; i++){
+         		if(items[i].type=='checkbox')
+         			items[i].checked=false;}
   if(window.location.href.includes("?")){
     $('.card').css('display','none');
     var param = window.location.href.split("?")[1];
@@ -212,6 +237,34 @@ window.onload = function(){
         $("#Electric").prop("checked", true);
         $('.Electric').css('display','block');
         break;
+      case 'chk=0-4000':
+          $("#0-4000").prop("checked", true);
+          $('.0-4000').css('display','block');
+          break;
+      case 'chk=4001-6000':
+          $("#4001-6000").prop("checked", true);
+          $('.4001-6000').css('display','block');
+          break;
+      case 'chk=6001-8000':
+          $("#6001-8000").prop("checked", true);
+          $('.6001-8000').css('display','block');
+          break;
+      case 'chk=8001-10000':
+          $("#8001-10000").prop("checked", true);
+          $('.8001-10000').css('display','block');
+          break;
+      case 'chk=10001-12000':
+          $("#10001-12000").prop("checked", true);
+          $('.10001-12000').css('display','block');
+          break;
+      case 'chk=12001-14000':
+          $("#12001-14000").prop("checked", true);
+          $('.12001-14000').css('display','block');
+          break;
+      case 'chk=14001a':
+          $("#14001a").prop("checked", true);
+          $('.14001a').css('display','block');
+          break;
       default:
         break;}
   }
@@ -236,7 +289,28 @@ window.onload = function(){
             checkClassesGlobal.push({name: 'Van', tag: ['van'], type: 'body'});
             break;
           case 'chk=Electric':
-            checkClassesGlobal.push({name: 'Electric', tag: ['electric'], type: 'fuel'});
+            checkClassesGlobal.push({name: 'Electric', tag: ['electric'], type: 'price'});
+            break;
+          case 'chk=0-4000':
+            checkClassesGlobal.push({name: '0-4000', tag: ['0-4000'], type: 'price'});
+            break;
+          case 'chk=4001-6000':
+            checkClassesGlobal.push({name: '4001-6000', tag: ['4001-6000'], type: 'price'});
+            break;
+          case 'chk=6001-8000':
+            checkClassesGlobal.push({name: '6001-8000', tag: ['6001-8000'], type: 'price'});
+            break;
+          case 'chk=8001-10000':
+            checkClassesGlobal.push({name: '8001-10000', tag: ['8001-10000'], type: 'price'});
+            break;
+          case 'chk=10001-12000':
+            checkClassesGlobal.push({name: '10001-12000', tag: ['10001-12000'], type: 'price'});
+            break;
+          case 'chk=12001-14000':
+            checkClassesGlobal.push({name: '12001-14000', tag: ['12001-14000'], type: 'price'});
+            break;
+          case 'chk=14001a':
+            checkClassesGlobal.push({name: '14001a', tag: ['14001a'], type: 'price'});
             break;
           default:
             break;}

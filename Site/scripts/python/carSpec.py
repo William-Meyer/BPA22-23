@@ -11,7 +11,11 @@ with open(filename, 'r') as csvfile:
             f = open('../../HTML/cars/car'+str(line[0])+'.html','x')
         except Exception as e:
             f = open('../../HTML/cars/car'+str(line[0])+'.html','w')
-
+        name = ''
+        if '%' in line[2]:
+            name = line[2].replace('%',' ')
+        else:
+            name = line[2]
         content = """<!DOCTYPE html>
                 <html lang="en" dir="ltr">
                   <head>
@@ -47,6 +51,8 @@ with open(filename, 'r') as csvfile:
                               <ul class = "mobile-drop-content">
                                 <li> <a href="../financing.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
                                 <li> <a href="../filter.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
+                                <li> <a href="../quiz.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Quiz</a> </li>
+
                               </ul>
                           </div>
                           </li>
@@ -71,6 +77,7 @@ with open(filename, 'r') as csvfile:
                           <ul class = "dropdown-content-desktop">
                             <li> <a href="../financing.html">FINANCING</a> </li>
                             <li> <a href="../filter.html">FIND YOUR CAR</a> </li>
+                            <li> <a href="../quiz.html">QUIZ</a> </li>
                           </ul>
                         </div>
                         </div>
@@ -124,7 +131,7 @@ with open(filename, 'r') as csvfile:
                     <p class = "val">"""+line[1]+"""</p>
                     <hr size= '2px' width= '100%' color= '#013f5b'>
                     <p class = "cat"><strong>Model</strong></p>
-                    <p class = "val">"""+line[2]+"""</p>
+                    <p class = "val">"""+name+"""</p>
                     <hr size= '2px' width= '100%' color= '#013f5b'>
                     <p class = "cat"><strong>Year</strong></p>
                     <p class = "val">"""+line[3]+"""</p>
@@ -159,9 +166,9 @@ with open(filename, 'r') as csvfile:
                     <div class="reveal">
                       <h2>Thank you for you interest in the</h2>
                       <br>
-                      <h2 id="data">"""+line[3]+""" """+line[1]+""" """+line[2]+"""</h2>
-                      <p>We will be in touch yo answer any questions you may have, or set up a test drive.</p>
-                      <button id = "filter" type="button" name="button">Continue Shopping</button>
+                      <h2 id="data">"""+line[3]+""" """+line[1]+""" """+name+"""</h2>
+                      <p>We will be in touch to answer any questions you may have, or set up a test drive.</p>
+                      <button onclick = "window.open('../filter.html','_self')" id = "filter" type="button" name="button">Continue Shopping</button>
                     </div>
                   </div>
                 </div>
@@ -176,8 +183,7 @@ with open(filename, 'r') as csvfile:
                       <div class="siteSection">
                         <a href="javascript:;"><h2>BUY</h2></a>
                         <ul>
-                          <li><a href="../financing.html">Financing</a></li>
-                          <br>
+                          <li id = "fLink"><a href="../financing.html">Financing</a></li>
                           <li><a href="../filter.html">Find Your Car</a></li>
                         </ul>
                       </div>
@@ -193,7 +199,7 @@ with open(filename, 'r') as csvfile:
                     </div>
                     <div class="bottomBanner">
                       <h1><Strong>Car</strong>tegrity</h1>
-                        <p>&copy; 2023 BPA Site. All rights reserved. SIte design by Cartegrity<br>Chapter #58-0136, Pickerington High School North.</p>
+                        <p>&copy; 2023 BPA Site. All rights reserved. Site design by Cartegrity<br>Chapter #58-0136, Pickerington High School North.</p>
                         <a><img class = "socials" src="../../imgs/instagram.png" alt="Instagram"></a>
                       <a><img class = "socials" src="../../imgs/twitter.png" alt="twitter"></a>
 

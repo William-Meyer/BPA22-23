@@ -32,6 +32,7 @@
               <ul class = "mobile-drop-content">
                 <li> <a href="financing.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
                 <li> <a href="filter.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
+                <li> <a href="quiz.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Quiz</a> </li>
               </ul>
           </div>
           </li>
@@ -56,6 +57,7 @@
           <ul class = "dropdown-content-desktop">
             <li> <a href="financing.html">FINANCING</a> </li>
             <li> <a href="filter.html">FIND YOUR CAR</a> </li>
+            <li> <a href="quiz.html">QUIZ</a> </li>
           </ul>
         </div>
         </div>
@@ -116,15 +118,15 @@
   <button onclick = "window.open('filter.html?chk=Electric','_self');" class="scale" type="button" name="button"> <img src="../imgs/electric.png" alt="electric car button"> <p>ELECTRICAL</p> </button>
 </div>
 <h2>FIND YOUR <strong>PERFECT VEHICLE</strong></h2>
-<button class = "scale" id = "quizButton" type="button" name="button">TAKE QUIZ</button>
+<button onclick = "window.open('quiz.html','_self')" class = "scale" id = "quizButton" type="button" name="button">TAKE QUIZ</button>
 <h2>CALCULATE</h2>
 <div class="calcOptions">
-  <div class = "calc"><button class="scale" type="button" name="button"> $ </button> <p>BUDGET</p> </div>
-  <div class = "calc"><button class="scale" type="button" name="button"> $ </button> <p>LOAN</p> </div>
-  <div class = "calc"><button class="scale" type="button" name="button"> $ </button> <p>TRADE-IN</p> </div>
+  <div class = "calc"><button onclick = "window.open('budget.html','_self')" class="scale" type="button" name="button"> $ </button> <p>BUDGET</p> </div>
+  <div class = "calc"><button onclick = "window.open('loan.html','_self')" class="scale" type="button" name="button"> $ </button> <p>LOAN</p> </div>
+  <div class = "calc"><button onclick = "window.open('sell.html','_self')" class="scale" type="button" name="button"> $ </button> <p>TRADE-IN</p> </div>
 </div>
 <hr size= '4px' width= '90%' color= '#d25353'>
-<div id = "timeGrid"class="gridContainer">
+<div id = "timeGrid" class="gridContainer">
   <div class="grid">
     <div class="hours">
       <h2>VISIT <strong>US</strong></h2>
@@ -162,37 +164,37 @@
 </main>
 
 <footer>
-<img src="../imgs/footerimage.png" alt="illustrated side view of a car driving on a road">
-  <div class="siteMap pentaGrid">
-    <div class="siteSection">
-      <a href="index.html"><h2>HOME</h2></a>
+  <img src="../imgs/footerimage.png" alt="illustrated side view of a car driving on a road">
+    <div class="siteMap pentaGrid">
+      <div class="siteSection">
+        <a href="index.html"><h2>HOME</h2></a>
+      </div>
+      <div class="siteSection">
+        <a href="javascript:;"><h2>BUY</h2></a>
+        <ul>
+          <li id = "fLink"><a href="financing.html">Financing</a></li>
+
+          <li><a href="filter.html">Find Your Car</a></li>
+        </ul>
+      </div>
+      <div class="siteSection">
+        <a href="sell.html"><h2>SELL</h2></a>
+      </div>
+      <div class="siteSection">
+        <a href="about.html"><h2>ABOUT US</h2></a>
+      </div>
+      <div class="siteSection">
+        <a href="filter.html"><h2>SEARCH</h2></a>
+      </div>
     </div>
-    <div class="siteSection">
-      <a href="javascript:;"><h2>BUY</h2></a>
-      <ul>
-        <li><a href="financing.html">Financing</a></li>
-        <br>
-        <li><a href="filter.html">Find Your Car</a></li>
-      </ul>
-    </div>
-    <div class="siteSection">
-      <a href="sell.html"><h2>SELL</h2></a>
-    </div>
-    <div class="siteSection">
-      <a href="about.html"><h2>ABOUT US</h2></a>
-    </div>
-    <div class="siteSection">
-      <a href="filter.html"><h2>SEARCH</h2></a>
-    </div>
-  </div>
-  <div class="bottomBanner">
-    <h1><Strong>Car</strong>tegrity</h1>
-      <p>&copy; 2023 BPA Site. All rights reserved. SIte design by Cartegrity<br>Chapter #58-0136, Pickerington High School North.</p>
-      <a><img class = "socials" src="../imgs/instagram.png" alt="Instagram"></a>
-    <a><img class = "socials" src="../imgs/twitter.png" alt="twitter"></a>
+    <div class="bottomBanner">
+      <h1><Strong>Car</strong>tegrity</h1>
+        <p>&copy; 2023 BPA Site. All rights reserved. Site design by Cartegrity<br>Chapter #58-0136, Pickerington High School North.</p>
+        <a><img class = "socials" src="../imgs/instagram.png" alt="Instagram"></a>
+      <a><img class = "socials" src="../imgs/twitter.png" alt="twitter"></a>
 
 
-  </div>
-</footer>
+    </div>
+  </footer>
 </body>
 </html>
