@@ -94,6 +94,7 @@ button{
 
 }
 #hr1{
+  width: 85%;
   max-width: 950px;
 }
 ::placeholder{

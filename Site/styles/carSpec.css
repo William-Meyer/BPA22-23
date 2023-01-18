@@ -14,6 +14,9 @@ main{
 .cat{
   float: left;
 }
+#hr1{
+  width:90%;
+}
 .val{
   float: right;
 }
@@ -21,8 +24,12 @@ hr{
   max-width: 1400px;
   margin-bottom: 0;
 }
+#submit{
+  font-size: 24px;
+}
 .info hr{
   background-color: #013f5b;
+  width: 100%;
 }
 .gridContainer{
   margin-top: -50px;

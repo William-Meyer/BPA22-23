@@ -1,8 +1,19 @@
 .carOptions img{
   width: 15vw;
   height: auto;
-  display: inline-block;
+  display: block;
   max-width: 240px;/*170*/
+}
+#hr80vw{
+  width: 30%;
+}
+#hr100vw{
+  margin-top: -20px;
+  width: 20%;;
+}
+#hr90{
+  margin-bottom: 50px; 
+  width: 90%;
 }
 .welcome{
   position: absolute;
@@ -19,17 +30,37 @@
   font-size: 2.5vw;
   color: black;
 }
+.mySlides button{
+  color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
+}
+.carOptions button{
+  font-family: highgate, sans-serif;
+  vertical-align:top;
+  height: 15vw;
+  max-height: 240px;
+  border-radius: 0;
+  border-color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1e556f;
+  text-align: center;
+}
 @media (max-width: 1000px){
   .welcome{
     display: none;
   }
 }
 .carOptions button{
+  font-family: highgate, sans-serif;
   vertical-align:top;
   height: 15vw;
   max-height: 240px;
   border-radius: 0;
   border-color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
 }
 .carOptions p{
     margin-top: -5%;
@@ -116,9 +147,6 @@ button:hover{
 }
 #timeGrid{
   margin-top: 10px;
-}
-#hr1{
-  margin-top: -35px;
 }
 .times{
   text-align: right;
