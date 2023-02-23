@@ -1,8 +1,19 @@
 .carOptions img{
   width: 15vw;
   height: auto;
-  display: inline-block;
+  display: block;
   max-width: 240px;/*170*/
+}
+#hr80vw{
+  width: 30%;
+}
+#hr100vw{
+  margin-top: -20px;
+  width: 20%;;
+}
+#hr90{
+  margin-bottom: 50px;
+  width: 90%;
 }
 .welcome{
   position: absolute;
@@ -19,11 +30,30 @@
   font-size: 2.5vw;
   color: black;
 }
+<<<<<<< HEAD
 #header2{
   margin-top: 170px;
 }
 #header3{
   margin-top: 170px;
+=======
+.mySlides button{
+  color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
+}
+.carOptions button{
+  font-family: highgate, sans-serif;
+  vertical-align:top;
+  height: 15vw;
+  max-height: 240px;
+  border-radius: 0;
+  border-color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1e556f;
+  text-align: center;
+>>>>>>> 96be6d0e6b9d5d5b3a68b92f2d23ef93a346ea96
 }
 @media (max-width: 1000px){
   .welcome{
@@ -31,11 +61,14 @@
   }
 }
 .carOptions button{
+  font-family: highgate, sans-serif;
   vertical-align:top;
   height: 15vw;
   max-height: 240px;
   border-radius: 0;
   border-color: #1e556f;
+  font-size: 28px;
+  font-weight: 500;
 }
 .carOptions p{
     margin-top: -5%;
@@ -127,7 +160,7 @@ button:hover{
 #hr1{
   margin-top: -35px;
 }
-#bighr{
+#hr90{
   margin-top: 100px;
 }
 

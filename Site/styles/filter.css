@@ -24,6 +24,9 @@ font-size: 18px;
 #fhr{
   width:98.5%;
 }
+.card img:hover{
+  cursor: pointer;
+}
 #search{
   background: none;
   height: 12vw;

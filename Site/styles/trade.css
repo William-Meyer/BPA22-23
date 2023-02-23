@@ -17,7 +17,7 @@ main{
   margin-top: -130px;
   position: relative;
   z-index: 1000;
-  text-align:left;
+  text-align:center;
   padding-bottom:30px;
   margin-bottom: 50px;
 }
@@ -25,45 +25,30 @@ main{
   margin-left: 40px;
   font-size: 48px;
   text-align: left;
-}
-.line{
-  margin-left: 40px;
-  text-align: left;
-}
-.line{
-  align-items: left;
+  font-weight: 100;
 }
 .card input{
+  text-align: center;
   font-size: 18px;
-  padding-left: 10px;
-  margin-right: 5px;
   border-width: 1px;
   height:45px;
   border-color: #1e556f;
   border-radius: 15px;
   border-style: solid;
   margin-bottom: -5px;
+  width: 200px;
 }
-#name{
-  width: 215px;
+.card select{
+  color:#4f7a8e;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 15px;
+  border-color: #1e556f;
 }
-#lName{
-  width: 215px;
-}
-#email{
-  width: 267px;
-}
-#phone{
-  width:163px;
-}
-#make{
-  width: 150px;
-}
-#model{
-  width:150px;
-}
-#year{
-  width: 150px;
+#hr2{
+  width: 200px;
 }
 #message{
   font-size: 18px;

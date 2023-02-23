@@ -16,6 +16,28 @@ function filterNums(aaString){
     if(numbers.includes(aString[i])){
       result = result+aString[i]
     }
+    else if(aString[i]=='.'){
+      if(aString.length>i+1){
+        dec=parseInt(aString[i+1])
+        if(dec>=5){
+          if(i!=0){
+            result = (parseInt(result) + 1).toString()
+            return result;
+          }
+          else{
+            return '1';
+          }
+        }
+        else{
+          if(i!=0){
+            return result;
+          }
+          else{
+            return '0';
+          }
+        }
+      }
+    }
   }
 }
   return result;

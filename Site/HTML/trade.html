@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://use.typekit.net/ipa0ltn.css">
   <link rel="stylesheet" href="../styles/nav.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/sell.css">
+  <link rel="stylesheet" href="../styles/trade.css">
   <link rel="stylesheet" href="../styles/slides.css">
   <link rel="stylesheet" href="../styles/footer.css">
   <script  src = "../scripts/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src = ../scripts/nav.js></script>
-  <script type="text/javascript" src = ../scripts/sell.js></script>
+  <script type="text/javascript" src = ../scripts/trade.js></script>
   <link rel="icon" type="image/x-icon" href="../imgs/fav.ico">
 </head>
 <body>
@@ -67,29 +67,87 @@
   <main>
     <img id="headerImg" src="../imgs/sell.png" alt="sell header image showing car driving away on the road">
     <div class="card">
-      <h1>Sell Your Vehicle</h1>
+      <h1>GET YOUR <strong>TRADE-IN VALUE</strong></h1>
       <div class="line">
-        <input id="name" type="text" name="name" value="" placeholder="First Name">
-        <input id="lName" type="text" name="lname" value="" placeholder="Last Name">
+        <select id="year" name="year">
+          <option value="" disabled selected hidden>Year</option>
+  <option value="2000+">2000+</option>
+  <option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+  <option value="2004">2004</option>
+  <option value="2005">2005</option>
+  <option value="2006">2006</option>
+  <option value="2007">2007</option>
+  <option value="2008">2008</option>
+  <option value="2009">2009</option>
+  <option value="2010">2010</option>
+  <option value="2011">2011</option>
+  <option value="2012">2012</option>
+  <option value="2013">2013</option>
+  <option value="2014">2014</option>
+  <option value="2015">2015</option>
+  <option value="2016">2016</option>
+  <option value="2017">2017</option>
+  <option value="2018">2018</option>
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+</select>
       </div>
       <br>
       <div class="line">
-        <input id = "email" type="text" name="email" value="" placeholder="Email">
-        <input id="phone" type="text" name="phone" value="" placeholder="Phone">
+        <select id="make" name="make">
+          <option value="" disabled selected hidden>Make</option>
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Buick">Buick</option>
+  <option value="Chevy">Chevy</option>
+  <option value="Ford">Ford</option>
+  <option value="Honda">Honda</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Infiniti">Infiniti</option>
+  <option value="Jeep">Jeep</option>
+  <option value="Lexus">Lexus</option>
+  <option value="Subaru">Subaru</option>
+  <option value="Toyota">Toyota</option>
+</select>
+
+<select id="model" name="model">
+  <option value="" disabled selected hidden>Model</option>
+<option value="Civic">Civic</option>
+<option value="Accord">Accord</option>
+<option value="Pilot">Pilot</option>
+<option value="CR-V">CR-V</option>
+<option value="330 XI">330 XI</option>
+<option value="Corolla">Corolla</option>
+<option value="Cruze">Cruze</option>
+<option value="ES 350">ES 350</option>
+<option value="F-150">F-150</option>
+<option value="Forester">Forester</option>
+<option value="Lucerne">Lucerne</option>
+<option value="Q7">Q7</option>
+<option value="Silverado">Silverado</option>
+<option value="Venue">Venue</option>
+<option value="Wrangler">Wrangler</option>
+<option value="G37x">G37x</option>
+<option value="Tacoma">Tacoma</option>
+</select>
       </div>
       <br>
       <div class="line">
-        <input id = "make" type="text" name="make" value="" placeholder="Make">
-        <input id="model" type="text" name="model" value="" placeholder="Model">
-        <input id ="year" type="text" name="year" value="" placeholder="Year">
+        <input id = "mile" type="text" name="mile" value="" placeholder="Milage">
       </div>
-      <textarea id = "message" name="name" rows="16" cols="80" placeholder="Message:"></textarea>
-      <br>
       <button id = "submit" type="button" name="button" onclick="sell()">Submit</button>
       <div class="reveal">
-        <h2>Thank you for your interest in selling your vehicle to Cartegrity!</h2>
-        <p>We will review your submission and be in touch. Looking for a new vehicle? check out our selection of pre-owned vehichles.</p>
-        <button onclick="window.open('filter.html','_self')" type="button" name="button">Shop all Vehicles</button>
+        <h2 id = "carDetail"></h2>
+        <h1 id = "estimate"></h1>
+        <hr id = "hr2">
+        <p>Want to sell your vehicle?</p>
+        <button onclick="window.open('sell.html','_self')" type="button" name="button">Sell to<br>Cartegrity</button>
         <p></p>
       </div>
     </div>

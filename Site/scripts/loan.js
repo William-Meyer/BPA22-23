@@ -16,6 +16,28 @@ function filterNums(aaString){
     if(numbers.includes(aString[i])){
       result = result+aString[i]
     }
+    else if(aString[i]=='.'){
+      if(aString.length>i+1){
+        dec=parseInt(aString[i+1])
+        if(dec>=5){
+          if(i!=0){
+            result = (parseInt(result) + 1).toString()
+            return result;
+          }
+          else{
+            return '1';
+          }
+        }
+        else{
+          if(i!=0){
+            return result;
+          }
+          else{
+            return '0';
+          }
+        }
+      }
+    }
   }
 }
   return result;
@@ -34,8 +56,9 @@ function calc(){
       $('#vpo').html('$ '+addCommas(filterNums($('#vp').val())))
       $('#dpo').html('$ '+addCommas(filterNums($('#dp').val())))
       $('#lio').html('$ '+addCommas(String(parseInt(filterNums($('#ir').val()))/100)*parseInt(filterNums($('#vp').val()))))
+      alert(filterNums($('#tp').val()));
       monthly = (parseInt(filterNums($('#vp').val()))+(parseInt(filterNums($('#ir').val()))/100)*parseInt(filterNums($('#vp').val()))+(parseInt(filterNums($('#tp').val()))/100)*parseInt(filterNums($('#vp').val())) - parseInt(filterNums($('#dp').val())) - parseInt(filterNums($('#trd').val())))/length;
-      if(montly<0){
+      if(monthly<0){
         monthly =0;
       }
       $('#lpo').html('$ '+addCommas(String(monthly)));
