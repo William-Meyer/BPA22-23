@@ -7,6 +7,9 @@
 #hr3a{
   width: 20%;
 }
+#headerImg{
+  margin-top: -10vw;
+}
 main{
   padding-bottom:100px;
 }
@@ -95,6 +98,9 @@ main{
     width: 70vw;
     margin-right:15vw;
     margin-left: 15vw;
+  }
+  #headerImg{
+    margin-top: 0;
   }
   .grid{
     grid-template-columns: 1fr;

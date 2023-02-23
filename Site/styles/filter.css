@@ -14,6 +14,13 @@ main{
   padding:0;
   max-width: 1100px;
 }
+#des{
+padding-left: 20px;
+padding-right:20px;
+margin-top: 70px;
+margin-bottom: -100px;
+font-size: 18px;
+}
 #fhr{
   width:98.5%;
 }
@@ -87,6 +94,9 @@ main{
   cursor: pointer;
 }
 @media (max-width:1000px){
+  #des{
+    margin-bottom: -50px;
+  }
   .filterGrid{
     display: block;
     margin-right: 0;

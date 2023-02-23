@@ -18,6 +18,9 @@ main{
   margin-bottom: 0;
   padding-bottom: 50px;
 }
+#headerImg{
+  margin-top:-16vw;
+}
 .quizForm{
     margin-bottom: 70px;
     margin-top: 30px;
@@ -77,6 +80,10 @@ fieldset{
     border-radius: 20px;
 
   }
+  #headerImg{
+    margin-top:0;
+  }
+
 }
 @media screen and (min-width: 1600px){
   #quizButton{

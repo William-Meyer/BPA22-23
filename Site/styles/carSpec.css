@@ -145,6 +145,7 @@ hr{
   margin-right: 10px;
 }
 #message{
+  box-sizing:border-box;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 23px;
@@ -152,13 +153,11 @@ hr{
   border-color: #1e556f;
   font-size: 18px;
   margin-bottom: 5px;
-  width: 90%;
+  width: 96%;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
     color: #4f7a8e;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 #submit{
   margin-top: 20px;
