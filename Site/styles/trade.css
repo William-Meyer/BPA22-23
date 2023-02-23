@@ -129,7 +129,7 @@ button{
 }
 .reveal h2{
   color: Black;
-  font-weight: 700;
+  font-weight: 200;
 }
 .reveal p{
   color: black;
@@ -139,6 +139,13 @@ button{
   height: 60px;
   width: 300px;
   letter-spacing: 4px;
+}
+#estimate{
+  text-align: center;
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: .12em;
 }
 @media(max-width:1050px){
   .circleC{

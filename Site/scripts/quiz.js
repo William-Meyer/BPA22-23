@@ -20,7 +20,7 @@ function submit(){
     if(theID == 'q1'){
       if(theVal == 1){
         j++;
-        sedan++
+        sedan+=2
         truck++
         electric++
       }
@@ -37,8 +37,8 @@ function submit(){
         van++
       }
       if(theVal == 5){
-        suv++
-        van++
+        suv+=3
+        van+=3
       }
 
     }
@@ -54,17 +54,15 @@ function submit(){
       if(theVal == 3){
         suv++
         van++
-        truck++
       }
       if(theVal == 4){
-        suv++
-        van++
-        truck++
+        suv+=2
+        van+=2
+        truck+=2
       }
       if(theVal == 5){
-        suv++
-        van++
-        truck++
+        suv+=2
+        truck+=3
       }
 
     }
@@ -79,6 +77,7 @@ function submit(){
       }
       if(theVal == 3){
         suv++
+        van++
         sedan++
       }
       if(theVal == 4){
@@ -86,8 +85,8 @@ function submit(){
         electric++
       }
       if(theVal == 5){
-        sedan++
-        electric++
+        sedan+=2
+        electric+=4
       }
 
     }
@@ -100,22 +99,21 @@ function submit(){
       }
       if(theVal == 3){
         suv++
-        electric++
         truck++
+        van++
       }
       if(theVal == 4){
         suv++
         electric++
       }
       if(theVal == 5){
-        suv++
         electric++
       }
 
     }
     if(theID == 'q5'){
       if(theVal == 1){
-        sedan++
+        sedan+=2
       }
       if(theVal == 2){
         sedan++
@@ -127,12 +125,9 @@ function submit(){
       }
       if(theVal == 4){
         suv++
-        van++
       }
       if(theVal == 5){
-        suv++
-        van++
-        electric++
+        electric+=2
       }
 
     }
@@ -149,6 +144,7 @@ for(let i=0; i<theList.length;i++){
     index = i;
   }
 }
+console.log('index: '+index)
 $('#resultsText').css('display','block')
 $('#results').css('display','block')
 if(max == 1){

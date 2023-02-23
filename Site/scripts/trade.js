@@ -43,29 +43,29 @@ function sell(){
   let miles = document.getElementById('mile').value;
   miles = filterNums(miles)
   if(miles.length>0 && model.length > 0 && make.length>0 && year.length>0){
-    //do stuff
     let total=40000
     if(year == '2000+'){
-      total = 10000
+      total = 10000;
     }
     else{
-      total = total - ((2023 - parseInt(year)) * 1350)
+      total = total - ((2023 - parseInt(year)) * 1000)
     }
     if(miles>300000){
       total = 0;
     }
     else{
-      total = total - (mile/50000 * 1000)
+      total = (total - (miles/5000 * 500));
     }
     if(total <= 500){
       total = 0;
     }
+
     //milage logic 1k per 50k miles
     //if total is less then 500 return 0
     $('.line').css('display','none');
     $('#message').css('display','none');
     $('#submit').css('display','none');
-    document.getElementById('carDetail').innerHTML ='Your <strong>'+toString(year)+ ' ' + toString(make) +' '+ toString(model)+'</strong><br>is Worth:';
+    document.getElementById('carDetail').innerHTML ='Your <strong>'+year+ ' ' + make +' '+ model+'</strong><br>is Worth:';
     document.getElementById('estimate').innerHTML = '$'+total;
     $('.reveal').css('display','block');
   }
