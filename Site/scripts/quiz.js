@@ -20,114 +20,114 @@ function submit(){
     if(theID == 'q1'){
       if(theVal == 1){
         j++;
-        sedan+=2
-        truck++
-        electric++
+        sedan+=2;
+        truck++;
+        electric++;
       }
       if(theVal == 2){
-        sedan++
-        truck++
-        electric++
+        sedan++;
+        truck++;
+        electric++;
       }
       if(theVal == 3){
 
       }
       if(theVal == 4){
-        suv++
-        van++
+        suv++;
+        van++;
       }
       if(theVal == 5){
-        suv+=3
-        van+=3
+        suv+=3;
+        van+=3;
       }
 
     }
     if(theID == 'q2'){
       if(theVal == 1){
-        sedan++
-        electric++
+        sedan++;
+        electric++;
       }
       if(theVal == 2){
-        sedan++
-        electric++
+        sedan++;
+        electric++;
       }
       if(theVal == 3){
-        suv++
-        van++
+        suv++;
+        van++;
       }
       if(theVal == 4){
-        suv+=2
-        van+=2
-        truck+=2
+        suv+=2;
+        van+=2;
+        truck+=2;
       }
       if(theVal == 5){
-        suv+=2
-        truck+=3
+        suv+=2;
+        truck+=3;
       }
 
     }
     if(theID == 'q3'){
       if(theVal == 1){
-        suv++
-        truck++
+        suv++;
+        truck++;
       }
       if(theVal == 2){
-        suv++
-        truck++
+        suv++;
+        truck++;
       }
       if(theVal == 3){
-        suv++
-        van++
-        sedan++
+        suv++;
+        van++;
+        sedan++;
       }
       if(theVal == 4){
-        sedan++
-        electric++
+        sedan++;
+        electric++;
       }
       if(theVal == 5){
-        sedan+=2
-        electric+=4
+        sedan+=2;
+        electric+=4;
       }
 
     }
     if(theID == 'q4'){
       if(theVal == 1){
-        sedan++
+        sedan++;
       }
       if(theVal == 2){
-        sedan++
+        sedan++;
       }
       if(theVal == 3){
-        suv++
-        truck++
-        van++
+        suv++;
+        truck++;
+        van++;
       }
       if(theVal == 4){
-        suv++
-        electric++
+        suv++;
+        electric++;
       }
       if(theVal == 5){
-        electric++
+        electric++;
       }
 
     }
     if(theID == 'q5'){
       if(theVal == 1){
-        sedan+=2
+        sedan+=2;
       }
       if(theVal == 2){
-        sedan++
-        van++
+        sedan++;
+        van++;
       }
       if(theVal ==3){
-        truck++
-        suv++
+        truck++;
+        suv++;
       }
       if(theVal == 4){
-        suv++
+        suv++;
       }
       if(theVal == 5){
-        electric+=2
+        electric+=2;
       }
 
     }
@@ -144,26 +144,27 @@ for(let i=0; i<theList.length;i++){
     index = i;
   }
 }
+index+=1;
 console.log('index: '+index)
 $('#resultsText').css('display','block')
 $('#results').css('display','block')
-if(max == 1){
+if(index == 1){
   $('#resultsText').html('Sedan!')
   link = 'filter.html?chk=Sedan'
 }
-if(max == 2){
+if(index == 2){
   $('#resultsText').html('Truck!')
   link = 'filter.html?chk=Truck'
 }
-if(max == 3){
+if(index == 3){
 $('#resultsText').html('Van!')
 link = 'filter.html?chk=Van'
 }
-if(max == 4){
+if(index == 4){
 $('#resultsText').html('SUV!')
 link = 'filter.html?chk=SUV'
 }
-if(max == 5){
+if(index == 5){
 $('#resultsText').html('Electric!')
 link = 'filter.html?chk=Electric'
 }
