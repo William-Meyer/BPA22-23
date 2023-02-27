@@ -216,24 +216,29 @@ window.onload = function(){
   if(window.location.href.includes("?")){
     $('.card').css('display','none');
     var param = window.location.href.split("?")[1];
+    var param = param.toLowerCase()
     switch (param) {
-      case 'chk=Sedan':
+      case 'chk=sedan':
         $("#Sedan").prop("checked", true);
         $('.Sedan').css('display','block');
         break;
-      case 'chk=SUV':
+      case 'chk=sadan':
+        $("#Sedan").prop("checked", true);
+        $('.Sedan').css('display','block');
+        break;
+      case 'chk=suv':
         $("#SUV").prop("checked", true);
         $('.SUV').css('display','block');
         break;
-      case 'chk=Truck':
+      case 'chk=truck':
         $("#Truck").prop("checked", true);
         $('.Truck').css('display','block');
         break;
-      case 'chk=Van':
+      case 'chk=van':
         $("#Van").prop("checked", true);
         $('.Van').css('display','block');
         break;
-      case 'chk=Electric':
+      case 'chk=electric':
         $("#Electric").prop("checked", true);
         $('.Electric').css('display','block');
         break;
