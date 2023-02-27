@@ -1,5 +1,6 @@
 let link = ''
 function submit(){
+  
   let sedan = 0;
   let suv = 0;
   let truck = 0;

@@ -1,4 +1,5 @@
 import csv
+
 import os
 def writeToFile(toWrite):
     f = open(outputFile, "a")

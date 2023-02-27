@@ -1,4 +1,5 @@
 import webbrowser
+
 import os
 import csv
 filename = 'cars.csv'
@@ -21,6 +22,7 @@ with open(filename, 'r') as csvfile:
                   <head>
                     <meta charset="utf-8">
                     <title>Cartegrity | View Car</title>
+                    
                     <link rel="icon" type="image/x-icon" href="../../imgs/fav.ico">
                     <link rel="stylesheet" href="https://use.typekit.net/ipa0ltn.css">
                     <link rel="stylesheet" href="https://use.typekit.net/ipa0ltn.css">

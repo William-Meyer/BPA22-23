@@ -153,6 +153,7 @@ button{
     display: block;
   }
 }
+
 @media(max-width:800px){
   .line input{
     display: block;

@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  
   $('.dropdown-content-desktop').children().slideUp();
   $('.mobile-drop-content li a').slideUp();
   $('.nav-mobile-contnet').slideUp();
