@@ -1,6 +1,6 @@
 let link = ''
 function submit(){
-  
+
   let sedan = 0;
   let suv = 0;
   let truck = 0;
@@ -151,24 +151,25 @@ $('#resultsText').css('display','block')
 $('#results').css('display','block')
 if(index == 1){
   $('#resultsText').html('Sedan!')
-  link = 'filter.html?chk=Sedan'
+  link = 'results.html?car'
 }
 if(index == 2){
   $('#resultsText').html('Truck!')
-  link = 'filter.html?chk=Truck'
+  link = 'results.html?truck'
 }
 if(index == 3){
 $('#resultsText').html('Van!')
-link = 'filter.html?chk=Van'
+link = 'results.html?van'
 }
 if(index == 4){
 $('#resultsText').html('SUV!')
-link = 'filter.html?chk=SUV'
+link = 'results.html?suv'
 }
 if(index == 5){
 $('#resultsText').html('Electric!')
-link = 'filter.html?chk=Electric'
+link = 'results.html?electric'
 }
+  window.open(link,'_self');
 }
 function results(){
   window.open(link,'_self');

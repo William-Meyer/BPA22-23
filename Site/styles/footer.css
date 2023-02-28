@@ -9,7 +9,7 @@ footer{
     font-family: highgate, sans-serif;
 }
 .siteMap{
-  
+
   padding-top: 50px;
   padding-bottom: 100px;
   color: white;
@@ -80,7 +80,7 @@ a img{
   margin-left: 6px;
   margin-right: 6px;
 }
-#fLink{
+.fLink{
   margin-bottom: 20px;
 }
 @media (max-width: 1000px){

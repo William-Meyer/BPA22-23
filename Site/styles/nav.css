@@ -188,6 +188,9 @@ nav a:hover{
 }
 }
 @media only screen and (max-width: 1110px) {
+  #nav-desktop{
+    display: none;
+  }
   .nav-mobile{
     display: block;
   }

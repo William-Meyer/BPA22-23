@@ -152,11 +152,7 @@ button{
     margin-bottom: 70px;
     display: block;
   }
-}
-
-@media(max-width:800px){
-  .line input{
-    display: block;
-    margin-bottom: 20px;
+  #model{
+    margin-top: 20px;
   }
 }

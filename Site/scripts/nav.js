@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  
+
   $('.dropdown-content-desktop').children().slideUp();
   $('.mobile-drop-content li a').slideUp();
   $('.nav-mobile-contnet').slideUp();
@@ -8,12 +8,12 @@ $( document ).ready(function() {
   $(function() {
       $('.dropdown-desktop').hover(
       function(){
-        $(this).parent().find('.arrow').css({transform: 'rotate(' + 180 + 'deg)'});
+        $(this).find('.arrow').css({transform: 'rotate(' + 180 + 'deg)'});
           $(this).find("ul").children().slideDown('fast');
 
       },
       function(){
-        $(this).parent().find('.arrow').css({transform: 'rotate(' + 0 + 'deg)'});
+        $(this).find('.arrow').css({transform: 'rotate(' + 0 + 'deg)'});
         $(this).find("ul").children().stop(true,false);
         $(this).find("ul").children().slideUp('fast');
 
@@ -21,20 +21,22 @@ $( document ).ready(function() {
       }
     );
     $('.mobile-drop-link').click(function(){
-      if ($(this).parent().find('.mobile-drop-content-link').is(':visible')){
-        $(this).parent().find('.arrow').css({
+      $(".mobile-drop-link").not($(this)).slideDown();
+      if ($(this).find('.mobile-drop-content-link').is(':visible')){
+        $(this).find('.arrow').css({
             transform: 'rotate(' + 0 + 'deg)'
         });
-        $(this).parent().find('.mobile-drop-content-link').slideUp();
+        $(this).find('.mobile-drop-content-link').slideUp();
         $('.mobile-link').slideDown();
       }
       else{
-        $(this).parent().find('.arrow').css({
+        $(".mobile-drop-link").not($(this)).slideUp();
+        $(this).find('.arrow').css({
             transform: 'rotate(' + 180 + 'deg)'
         });
         $('.mobile-drop-content li a').slideUp();
         $('.mobile-link').slideUp();
-        $(this).parent().find('.mobile-drop-content-link').slideDown();
+        $(this).find('.mobile-drop-content-link').slideDown();
       }
 
     });
