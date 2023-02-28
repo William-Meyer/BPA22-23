@@ -1,98 +1,15 @@
 
-<div id = "car1" class="card Honda Pilot 2011 Gray SUV Gas $6,149 120001-150000 6001-8000">
-<img onclick="window.open('cars/car1.html','_self')" src="../imgs/cars/car1-1.jpg" alt="2011 Gray Honda Pilot">
-<div class="cardInfo">
-<a href = "cars/car1.html">2011 | Honda Pilot</a>
-</div>
-</div>
-<div id = "car3" class="card Chevy Silverado 2006 Blue Truck Gas $7,099 90001-120000 6001-8000">
-<img onclick="window.open('cars/car3.html','_self')" src="../imgs/cars/car3-1.jpg" alt="2006 Blue Chevy Silverado">
-<div class="cardInfo">
-<a href = "cars/car3.html">2006 | Chevy Silverado</a>
-</div>
-</div>
-<div id = "car4" class="card Chevy Cruze 2014 Blue Sedan Gas $5,739 150001-180000 4001-6000">
-<img onclick="window.open('cars/car4.html','_self')" src="../imgs/cars/car4-1.jpg" alt="2014 Blue Chevy Cruze">
-<div class="cardInfo">
-<a href = "cars/car4.html">2014 | Chevy Cruze</a>
-</div>
-</div>
-<div id = "car5" class="card Honda CR-V 2010 Brown SUV Gas $10,879 30001-60000 10001-12000">
-<img onclick="window.open('cars/car5.html','_self')" src="../imgs/cars/car5-1.jpg" alt="2010 Brown Honda CR-V">
-<div class="cardInfo">
-<a href = "cars/car5.html">2010 | Honda CR-V</a>
-</div>
-</div>
-<div id = "car12" class="card Honda Civic 2014 Gray Sedan Gas $7,859 90001-120000 6001-8000">
-<img onclick="window.open('cars/car12.html','_self')" src="../imgs/cars/car12-1.jpg" alt="2014 Gray Honda Civic">
-<div class="cardInfo">
-<a href = "cars/car12.html">2014 | Honda Civic</a>
-</div>
-</div>
-<div id = "car13" class="card Buick Lucerne 2007 Red Sedan Gas $4,469 180001-210000 4001-6000">
-<img onclick="window.open('cars/car13.html','_self')" src="../imgs/cars/car13-1.jpg" alt="2007 Red Buick Lucerne">
-<div class="cardInfo">
-<a href = "cars/car13.html">2007 | Buick Lucerne</a>
-</div>
-</div>
-<div id = "car14" class="card Infiniti g37x 2013 Black Sedan Gas $7,289 90001-120000 6001-8000">
-<img onclick="window.open('cars/car14.html','_self')" src="../imgs/cars/car14-1.jpg" alt="2013 Black Infiniti g37x">
-<div class="cardInfo">
-<a href = "cars/car14.html">2013 | Infiniti g37x</a>
-</div>
-</div>
-<div id = "car15" class="card Lexus ES%350 2018 Black Sedan Gas $10,299 30001-60000 10001-12000">
-<img onclick="window.open('cars/car15.html','_self')" src="../imgs/cars/car15-1.jpg" alt="2018 Black Lexus ES 350">
-<div class="cardInfo">
-<a href = "cars/car15.html">2018 | Lexus ES 350</a>
-</div>
-</div>
-<div id = "car16" class="card Audi Q7 2015 White SUV Gas $8,649 60001-90000 8001-10000">
-<img onclick="window.open('cars/car16.html','_self')" src="../imgs/cars/car16-1.jpg" alt="2015 White Audi Q7">
-<div class="cardInfo">
-<a href = "cars/car16.html">2015 | Audi Q7</a>
-</div>
-</div>
-<div id = "car19" class="card Honda Civic 2017 Red Sedan Gas $9,549 60001-90000 8001-10000">
-<img onclick="window.open('cars/car19.html','_self')" src="../imgs/cars/car19-1.jpg" alt="2017 Red Honda Civic">
-<div class="cardInfo">
-<a href = "cars/car19.html">2017 | Honda Civic</a>
-</div>
-</div>
-<div id = "car20" class="card BMW 330%XI 2015 Blue Sedan Gas $11,089 30001-60000 10001-12000">
-<img onclick="window.open('cars/car20.html','_self')" src="../imgs/cars/car20-1.jpg" alt="2015 Blue BMW 330 XI">
-<div class="cardInfo">
-<a href = "cars/car20.html">2015 | BMW 330 XI</a>
-</div>
-</div>
-<div id = "car21" class="card Honda Accord 2019 White Sedan Hybrid $12,749 30001-60000 12001-14000">
-<img onclick="window.open('cars/car21.html','_self')" src="../imgs/cars/car21-1.jpg" alt="2019 White Honda Accord">
-<div class="cardInfo">
-<a href = "cars/car21.html">2019 | Honda Accord</a>
-</div>
-</div>
-<div id = "car22" class="card Jeep Wrangler 2020 Gray SUV Gas $11,089 30001-60000 10001-12000">
-<img onclick="window.open('cars/car22.html','_self')" src="../imgs/cars/car22-1.jpg" alt="2020 Gray Jeep Wrangler">
-<div class="cardInfo">
-<a href = "cars/car22.html">2020 | Jeep Wrangler</a>
-</div>
-</div>
-<div id = "car24" class="card Toyota Corolla 2019 Red Sedan Gas $10,109 30001-60000 10001-12000">
-<img onclick="window.open('cars/car24.html','_self')" src="../imgs/cars/car24-1.jpg" alt="2019 Red Toyota Corolla">
-<div class="cardInfo">
-<a href = "cars/car24.html">2019 | Toyota Corolla</a>
-</div>
-</div>
-<div id = "carID" class="card Make Model Year Color Type Fuel Price MileageBracket priceBracket">
-<img src="../imgs/cars/carID-1.png" alt="Year Color Make Model">
-<div class="cardInfo">
-<a href = "cars/carID.html">Year | Make Model</a>
-</div>
 </div>
 <div id = "car1" class="card Honda Pilot 2011 Gray SUV Gas $6,149 120001-150000 6001-8000">
 <img src="../imgs/cars/car1-1.png" alt="2011 Gray Honda Pilot">
 <div class="cardInfo">
 <a href = "cars/car1.html">2011 | Honda Pilot</a>
+</div>
+</div>
+<div id = "car2" class="card Hyundai Venue 2022 Silver SUV Gas $18,899 0-30000 14001a">
+<img src="../imgs/cars/car2-1.png" alt="2022 Silver Hyundai Venue">
+<div class="cardInfo">
+<a href = "cars/car2.html">2022 | Hyundai Venue</a>
 </div>
 </div>
 <div id = "car3" class="card Chevy Silverado 2006 Blue Truck Gas $7,099 90001-120000 6001-8000">
@@ -111,6 +28,24 @@
 <img src="../imgs/cars/car5-1.png" alt="2010 Brown Honda CR-V">
 <div class="cardInfo">
 <a href = "cars/car5.html">2010 | Honda CR-V</a>
+</div>
+</div>
+<div id = "car6" class="card Subaru Forester 2019 Blue SUV Gas $11,859 30001-60001 10001-12000">
+<img src="../imgs/cars/car6-1.png" alt="2019 Blue Subaru Forester">
+<div class="cardInfo">
+<a href = "cars/car6.html">2019 | Subaru Forester</a>
+</div>
+</div>
+<div id = "car7" class="card Subaru Forester 2014 Blue SUV Gas $8,789 90001-120000 8001-10000">
+<img src="../imgs/cars/car7-1.png" alt="2014 Blue Subaru Forester">
+<div class="cardInfo">
+<a href = "cars/car7.html">2014 | Subaru Forester</a>
+</div>
+</div>
+<div id = "car10" class="card Toyota Prius 2016 Green Sedan Hybrid $11,249 30001-60000 10001-12000">
+<img src="../imgs/cars/car10-1.png" alt="2016 Green Toyota Prius">
+<div class="cardInfo">
+<a href = "cars/car10.html">2016 | Toyota Prius</a>
 </div>
 </div>
 <div id = "car12" class="card Honda Civic 2014 Gray Sedan Gas $7,859 90001-120000 6001-8000">
@@ -171,5 +106,95 @@
 <img src="../imgs/cars/car24-1.png" alt="2019 Red Toyota Corolla">
 <div class="cardInfo">
 <a href = "cars/car24.html">2019 | Toyota Corolla</a>
+</div>
+</div>
+<div id = "car26" class="card Kia Sorento 2023 Gray SUV Gas $23,679 0-30000 14001a">
+<img src="../imgs/cars/car26-1.png" alt="2023 Gray Kia Sorento">
+<div class="cardInfo">
+<a href = "cars/car26.html">2023 | Kia Sorento</a>
+</div>
+</div>
+<div id = "car27" class="card Honda Civic 2019 White Sedan Gas $16,749 0-30000 14001a">
+<img src="../imgs/cars/car27-1.png" alt="2019 White Honda Civic">
+<div class="cardInfo">
+<a href = "cars/car27.html">2019 | Honda Civic</a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card         ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
+</div>
+</div>
+<div id = "car" class="card          ">
+<img src="../imgs/cars/car-1.png" alt="   ">
+<div class="cardInfo">
+<a href = "cars/car.html"> |  </a>
 </div>
 </div>

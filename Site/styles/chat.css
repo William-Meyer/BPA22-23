@@ -84,10 +84,10 @@ padding: 0;
   font-weight: 900;
   color: white;
   position: fixed; /* Fixed/sticky position */
-  bottom: 100px; /* Place the button at the bottom of the page */
+  bottom: 50px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 10000; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
+  border: solid; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: white; /* Set a background color */
   color: white; /* Text color */
@@ -97,6 +97,10 @@ padding: 0;
   border-radius: 60px; /* Rounded corners */
   font-size: 30px;
   padding-top:10px; /* Increase font size */
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+
 }
 #chatWindow{
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

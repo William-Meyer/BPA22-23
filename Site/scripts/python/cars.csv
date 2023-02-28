@@ -1,8 +1,12 @@
 ID,Make,Model,Year,Color,Type,Fuel,Milage,Price,MileageBracket,priceBracket
 1,Honda,Pilot,2011,Gray,SUV,Gas,"130,000","$6,149",120001-150000,6001-8000
+2,Hyundai,Venue,2022,Silver,SUV,Gas,"1,100","$18,899",0-30000,14001a
 3,Chevy,Silverado,2006,Blue,Truck,Gas,"105,000","$7,099",90001-120000,6001-8000
 4,Chevy,Cruze,2014,Blue,Sedan,Gas,"160,000","$5,739",150001-180000,4001-6000
 5,Honda,CR-V,2010,Brown,SUV,Gas,"48,000","$10,879",30001-60000,10001-12000
+6,Subaru,Forester,2019,Blue,SUV,Gas,"42,277","$11,859",30001-60001,10001-12000
+7,Subaru,Forester,2014,Blue,SUV,Gas,"115,000","$8,789",90001-120000,8001-10000
+10,Toyota,Prius,2016,Green,Sedan,Hybrid,"44,000","$11,249",30001-60000,10001-12000
 12,Honda,Civic,2014,Gray,Sedan,Gas,"96,000","$7,859",90001-120000,6001-8000
 13,Buick,Lucerne,2007,Red,Sedan,Gas,"190,783","$4,469",180001-210000,4001-6000
 14,Infiniti,g37x,2013,Black,Sedan,Gas,"95,572","$7,289",90001-120000,6001-8000
@@ -13,3 +17,18 @@ ID,Make,Model,Year,Color,Type,Fuel,Milage,Price,MileageBracket,priceBracket
 21,Honda,Accord,2019,White,Sedan,Hybrid,"34,207","$12,749",30001-60000,12001-14000
 22,Jeep,Wrangler,2020,Gray,SUV,Gas,"45,000","$11,089",30001-60000,10001-12000
 24,Toyota,Corolla,2019,Red,Sedan,Gas,"54,300","$10,109",30001-60000,10001-12000
+26,Kia,Sorento,2023,Gray,SUV,Gas,"1,050","$23,679",0-30000,14001a
+27,Honda,Civic,2019,White,Sedan,Gas,"11,200","$16,749",0-30000,14001a
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,, ,
