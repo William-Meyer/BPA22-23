@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+#imgggg{
+  width: 40px;
+  height: auto;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  #options{
+    scrollbar-width: 7px;
+    scrollbar-color: #7e7e7e transparent;
+  }
+  @-moz-document url-prefix(){
+    #options{
+      scrollbar-width: 5px;
+    }
+  }
+  #options::scrollbar-thumb{
+    border-radius: 10px;
+  }
+
+  /* Chrome, Edge, and Safari */
+  #options::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  #options::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #options::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e;
+    border-radius: 10px;
+
+  }
+#topChat{
+width: 400px;
+text-align: left;
+border-radius: 30px 30px 0 0;
+background-color: #368DDA;
+height: 80px;
+overflow-y: hidden;
+display: inline-block;
+padding: 0;
+}
+.topEl{
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+#X{
+  font-size: 30px;
+  background: none;
+  margin-right: 20px;
+  float: right;
+  margin-top: -10px;
+  height: 70px;
+  width:70px;
+}
+#pfp{
+  margin-left: 10px;
+  margin-top: 5px;
+  height: 70px;
+  width: 70px;
+}
+#userInfo{
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#user{
+  color: #E6E5EA;
+}
+#status{
+  color: #C2D6EA;
+}
+#topChat button:hover{
+  cursor: pointer;
+}
+#chatButton {
+  font-weight: 900;
+  color: white;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 100px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 10000; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  height: 60px;
+  width:60px;/* Some padding */
+  border-radius: 60px; /* Rounded corners */
+  font-size: 30px;
+  padding-top:10px; /* Increase font size */
+}
+#chatWindow{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 30px 30px 10px 30px;
+  position: fixed;
+  width: 400px;
+  height: 670px;
+  background-color: #368DDA;
+  bottom: 150px;
+  right: 120px;
+  z-index: 10000;
+  text-align: center;
+  display: none;
+}
+#bottomChat{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 55px;
+  width: 100%;
+  background: white;
+}
+#questionBox{
+  margin-top: 0px;
+  position:absolute;
+  height: 50px;
+  width: 75%;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 8px;
+  left: 20px;
+}
+#questionBox:focus
+{
+    outline: none;
+    border:none;
+    border-bottom: 2px solid gray;
+}
+#send{
+  position:absolute;
+  bottom:35px;
+  right: 27px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  color: #5A5A5A;
+  font-size: 20px;
+}
+#send:hover{
+  background-color: #F2F3F5;
+  cursor: pointer;
+}
+#sendImg{
+  margin-left: -3px;
+  height: 25px;
+  width: 25px;
+}
+#question{
+  position: absolute;
+  color: black;
+  bottom: 60px;
+  left: 30px;
+  text-align: left;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.option{
+  transition: .2s ease-in-out 0s;
+  background: white;
+  min-width: 70px;
+  width: max-content;
+  max-width: 170px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2%;
+  border-radius: 10px;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  color:black;
+}
+#optionContainter{
+  margin-bottom: 20px;
+}
+.option:hover{
+   cursor: pointer;
+   transform: scale(1.15);
+   }
+#note{
+  margin-top: 8px;
+  font-size: 16px;
+  color: #C2D6EA;
+}
+#options{
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: #E6E5EA;
+  overflow: hidden;
+  height: 500px;
+  Overflow-y: scroll;
+}
+body {
+  background: #368dda;
+}
+button{
+  border-style: none;
+}
+.bubble p{
+  color: #303030;
+}
+input{
+  border-style: none;
+}
+.bubble p{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.bubble {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 8px;
+  line-height: 24px;
+  width: max-content;
+  max-width: 200px;
+  background: #fff;
+  border-radius: 40px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  color: #000;
+}
+.bubbleRight{
+  margin-right: 15px;
+  margin-left: auto;
+  border-radius: 30px 30px 8px 30px;
+}
+.bubbleLeft{
+  margin-left:10px;
+  border-radius: 30px 30px 30px 8px;
+}
