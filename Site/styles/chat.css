@@ -245,3 +245,8 @@ input{
   margin-left:10px;
   border-radius: 30px 30px 30px 8px;
 }
+@media (max-width: 1000px){
+  #chatWindow{
+    right: 20px;
+  }
+}

@@ -21,6 +21,32 @@
 
   </head>
   <body>
+    <button onclick="toggleChatWindow()" id="chatButton" title="Go to top"> <img id = "imgggg" src="../imgs/bubble.png" alt=""> </button>
+    <div id="chatWindow">
+      <div id="topChat">
+
+        <div class="topEl" id="userInfo">
+          <h1 id = "user">CHATBOT</h1>
+          <p id="status">Online</p>
+        </div>
+        <button onclick="toggleChatWindow()" class="topEl" type="button" name="button" id="X">X</button>
+
+      </div>
+        <div id="options">
+          <div class="bubble bubbleLeft">
+            <p>Welcome to Cartegrity. I am a personal chat bot. You can type a question and click on an available option. If you do not see an option after typing your question, then that means unfortunately I cannot answer it at this time.</p>
+          </div>
+          <div id="optionContainter">
+            <button type="button" data-type="optionButton" data-text="I am interested in buying a car" name="button" onclick="questionClick(this)" class="option">I am interested in buying a car</button>
+            <button type="button" data-type="optionButton" data-text="I want to apply for a job" name="button" onclick="questionClick(this)" class="option">I want to apply for a job</button>
+          </div>
+        </div>
+        <div id="bottomChat">
+          <input type="text" id="questionBox" onkeyup="chatTyping()" placeholder="Ask a question.">
+          <button id = "send" type="button" name="button" data-type = "send" onclick="questionClick(this)">&#10148;</button>
+        </div>
+        <p id ="note">Powered By Cartegrity</p>
+    </div>
     <nav id ="navBar">
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <a href="index.html" class="logoArea mobileLogo">
@@ -38,7 +64,14 @@
               </ul>
           </div>
           </li>
-          <li><a href="sell.html" class="mobile-link">&ensp;SELL</a></li>
+          <li class = "mobile-drop-link"><a href="javascript:;">&ensp;TRADE IN<div class = "arrow">▾</div></a>
+          <div class="mobile-drop-container">
+              <ul class = "mobile-drop-content">
+                <li> <a href="trade.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Trade in Calculator</a> </li>
+                <li> <a href="sell.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Sell Your Car</a> </li>
+              </ul>
+          </div>
+          </li>
           <li><a href="about.html" class="mobile-link">&ensp;ABOUT US</a></li>
         </ul>
       </div>
@@ -50,12 +83,18 @@
         <div class="desktop-content">
           <a href="about.html">ABOUT US</a>
         </div>
-        <div class="desktop-content">
-          <a href="sell.html">SELL</a>
+        <div class="dropdown-desktop">
+          <div class="dropdown-hover">
+          <a class = "dropdownLink" href="javascript:;">TRADE IN<div class = "arrow">▾</div></a>
+          <ul class = "dropdown-content-desktop">
+            <li> <a href="trade.html">Trade in Calculator</a> </li>
+            <li> <a href="sell.html">Sell Your Car</a> </li>
+          </ul>
+        </div>
         </div>
         <div class="dropdown-desktop">
           <div class="dropdown-hover">
-          <a class = "dropdownLink" href="javascript:;">BUY <div class = "arrow">▾</div></a>
+          <a class = "dropdownLink" href="javascript:;">BUY<div class = "arrow">▾</div></a>
           <ul class = "dropdown-content-desktop">
             <li> <a href="financing.html">FINANCING</a> </li>
             <li> <a href="filter.html">FIND YOUR CAR</a> </li>
@@ -232,13 +271,18 @@
       <div class="siteSection">
         <a href="javascript:;"><h2>BUY</h2></a>
         <ul>
-          <li id = "fLink"><a href="financing.html">Financing</a></li>
+          <li class = "fLink"><a href="financing.html">Financing</a></li>
 
           <li><a href="filter.html">Find Your Car</a></li>
         </ul>
       </div>
       <div class="siteSection">
-        <a href="sell.html"><h2>SELL</h2></a>
+        <a href="javascript:;"><h2>TRADE IN</h2></a>
+        <ul>
+          <li class = "fLink"><a href="trade.html">Trade in Calculator</a></li>
+
+          <li><a href="sell.html">Sell your Car</a></li>
+        </ul>
       </div>
       <div class="siteSection">
         <a href="about.html"><h2>ABOUT US</h2></a>

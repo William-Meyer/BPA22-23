@@ -22,7 +22,7 @@ with open(filename, 'r') as csvfile:
                   <head>
                     <meta charset="utf-8">
                     <title>Cartegrity | View Car</title>
-                    
+
                     <link rel="icon" type="image/x-icon" href="../../imgs/fav.ico">
                     <link rel="stylesheet" href="https://use.typekit.net/ipa0ltn.css">
                     <link rel="stylesheet" href="https://use.typekit.net/ipa0ltn.css">
@@ -39,53 +39,66 @@ with open(filename, 'r') as csvfile:
                     <script type="text/javascript" src = ../../scripts/spec.js></script>
                   </head>
                   <body>
-
-                    <nav id ="navBar">
-                      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                      <a href="../index.html" class="logoArea mobileLogo">
-                        <img src="../../imgs/logoCropped.png" alt="cartegrity logo">
-                        <h1><Strong>Car</strong>tegrity</h1>
-                      </a>
-                      <div class="nav-mobile-contnet">
-                        <ul>
-                          <li class = "mobile-drop-link marginTop"><a href="javascript:;">&ensp;BUY<div class = "arrow">&#9662;</div></a>
-                          <div class="mobile-drop-container">
-                              <ul class = "mobile-drop-content">
-                                <li> <a href="../financing.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
-                                <li> <a href="../filter.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
-                                <li> <a href="../quiz.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Quiz</a> </li>
-
-                              </ul>
-                          </div>
-                          </li>
-                          <li><a href="../sell.html" class="mobile-link">&ensp;SELL</a></li>
-                          <li><a href="../about.html" class="mobile-link">&ensp;ABOUT US</a></li>
+                  <nav id ="navBar">
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <a href="../index.html" class="logoArea mobileLogo">
+                  <img src="../../imgs/logoCropped.png" alt="cartegrity logo">
+                  <h1><Strong>Car</strong>tegrity</h1>
+                </a>
+                <div class="nav-mobile-contnet">
+                  <ul>
+                    <li class = "mobile-drop-link marginTop"><a href="javascript:;">&ensp;BUY<div class = "arrow">&#9662;</div></a>
+                    <div class="mobile-drop-container">
+                        <ul class = "mobile-drop-content">
+                          <li> <a href="../financing.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Financing</a> </li>
+                          <li> <a href="../filter.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Find Your Car</a> </li>
+                          <li> <a href="../quiz.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Quiz</a> </li>
                         </ul>
-                      </div>
-                      <div id="nav-desktop">
-                        <a href='../index.html' class="logoArea">
-                          <img src="../../imgs/logoCropped.png" alt="">
-                          <h1><Strong>Car</strong>tegrity</h1>
-                        </a>
-                        <div class="desktop-content">
-                          <a href="../about.html">ABOUT US</a>
-                        </div>
-                        <div class="desktop-content">
-                          <a href="../sell.html">SELL</a>
-                        </div>
-                        <div class="dropdown-desktop">
-                          <div class="dropdown-hover">
-                          <a class = "dropdownLink" href="javascript:;">BUY <div class = "arrow">&#9662;</div></a>
-                          <ul class = "dropdown-content-desktop">
-                            <li> <a href="../financing.html">FINANCING</a> </li>
-                            <li> <a href="../filter.html">FIND YOUR CAR</a> </li>
-                            <li> <a href="../quiz.html">QUIZ</a> </li>
-                          </ul>
-                        </div>
-                        </div>
-                      </div>
+                    </div>
+                    </li>
+                    <li class = "mobile-drop-link"><a href="javascript:;">&ensp;TRADE IN<div class = "arrow">&#9662;</div></a>
+                    <div class="mobile-drop-container">
+                        <ul class = "mobile-drop-content">
+                          <li> <a href="../trade.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Trade in Calculator</a> </li>
+                          <li> <a href="../sell.html" class = "mobile-drop-content-link">&ensp;&ensp;&ensp;&ensp;Sell Your Car</a> </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="../about.html" class="mobile-link">&ensp;ABOUT US</a></li>
+                  </ul>
+                </div>
+                <div id="nav-desktop">
+                  <a href='index.html' class="logoArea">
+                    <img src="../../imgs/logoCropped.png" alt="">
+                    <h1><Strong>Car</strong>tegrity</h1>
+                  </a>
+                  <div class="desktop-content">
+                    <a href="../about.html">ABOUT US</a>
+                  </div>
+                  <div class="dropdown-desktop">
+                    <div class="dropdown-hover">
+                    <a class = "dropdownLink" href="javascript:;">TRADE IN<div class = "arrow">&#9662;</div></a>
+                    <ul class = "dropdown-content-desktop">
+                      <li> <a href="../trade.html">Trade in Calculator</a> </li>
+                      <li> <a href="../sell.html">Sell Your Car</a> </li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="dropdown-desktop">
+                    <div class="dropdown-hover">
+                    <a class = "dropdownLink" href="javascript:;">BUY<div class = "arrow">&#9662;</div></a>
+                    <ul class = "dropdown-content-desktop">
+                      <li> <a href="../financing.html">FINANCING</a> </li>
+                      <li> <a href="../filter.html">FIND YOUR CAR</a> </li>
+                      <li> <a href="../quiz.html">QUIZ</a> </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
 
-                    </nav>
+              </nav>
+
+
 
                 <main>
                 <div class="caraContainer">
@@ -185,12 +198,18 @@ with open(filename, 'r') as csvfile:
                       <div class="siteSection">
                         <a href="javascript:;"><h2>BUY</h2></a>
                         <ul>
-                          <li id = "fLink"><a href="../financing.html">Financing</a></li>
+                          <li class = "fLink"><a href="../financing.html">Financing</a></li>
+
                           <li><a href="../filter.html">Find Your Car</a></li>
                         </ul>
                       </div>
                       <div class="siteSection">
-                        <a href="../sell.html"><h2>SELL</h2></a>
+                        <a href="javascript:;"><h2>TRADE IN</h2></a>
+                        <ul>
+                          <li class = "fLink"><a href="../trade.html">Trade in Calculator</a></li>
+
+                          <li><a href="../sell.html">Sell your Car</a></li>
+                        </ul>
                       </div>
                       <div class="siteSection">
                         <a href="../about.html"><h2>ABOUT US</h2></a>
@@ -208,7 +227,6 @@ with open(filename, 'r') as csvfile:
 
                     </div>
                   </footer>
-
               </body>
 
         </html>
