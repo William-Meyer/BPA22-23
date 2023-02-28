@@ -31,13 +31,12 @@
   font-size: 2.5vw;
   color: black;
 }
-<<<<<<< HEAD
 #header2{
   margin-top: 170px;
 }
 #header3{
   margin-top: 170px;
-=======
+}
 .mySlides button{
   color: #1e556f;
   font-size: 28px;
@@ -54,7 +53,6 @@
   font-weight: 500;
   color: #1e556f;
   text-align: center;
->>>>>>> 96be6d0e6b9d5d5b3a68b92f2d23ef93a346ea96
 }
 @media (max-width: 1000px){
   .welcome{

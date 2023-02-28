@@ -1,0 +1,73 @@
+#resultImage{
+  padding-top: 60px;
+  width:50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#resultImage img{
+  width: 100%;
+  height: auto;
+}
+#resultText{
+  font-weight: 700;
+}
+#resultButton{
+  width: 20vw;
+max-width: 400px;
+height: 4vw;
+max-height: 50px;
+background-color: #d25353;
+border-radius: 1vw;
+font-family: highgate, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: min(1.5vw, 24px);
+color: #f0f2f4;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 60px;
+}
+#resultHeader{
+  color: black;
+  font-size: 2em;
+  font-weight: 300;
+  margin-top: -20px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+p{
+  font-size: 1.5em;
+}
+#h70{
+  width: 75%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carOptions{
+  margin-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.carOptions button{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width:200px;
+  height: 200px;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.carOptions button img{
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1100px){
+  .carOptions button{
+    margin-top: 50px;
+    display: block;
+  }
+}
