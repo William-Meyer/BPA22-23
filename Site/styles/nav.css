@@ -32,7 +32,7 @@ nav{
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--bgColor) ;
+  background: var(--bgColor);
   height: 70px;
   width: 70px;
 }
@@ -237,14 +237,14 @@ nav a:hover{
   transform: rotate(-45deg);
 }
 .active{
-  background-color: #a64d4d ;
+  background-color: #a64d4d;
 }
 article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
 }
-@keyframes roll {
+@keyframes roll{
 
   0% {
     transform: rotate(0);

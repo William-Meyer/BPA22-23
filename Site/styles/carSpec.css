@@ -80,7 +80,6 @@ hr{
   width: 5vw;
   border-radius: 2vw;
   background-color: #013f5b;
-  box-shadow: 0;
   border: none;
   font-size: min(5vw, 56px);
   max-height:160px;
@@ -170,7 +169,7 @@ hr{
   margin-top: 20px;
   height: 35px;
   width: 220px;
-  border-color: none;
+  border-color: transparent;
   background-color: #1e556f;
   border-radius: 10px;
   color: white;
