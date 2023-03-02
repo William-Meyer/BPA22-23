@@ -201,13 +201,23 @@ function searchTyping(){
 }
 search();
 }
+
 function removeItemOnce(arr, value) {
   var index = arr.indexOf(value);
+  console.log('array before: '+arr)
   if (index > -1) {
     arr.splice(index, 1);
   }
+  console.log('array after: '+arr)
   return arr;
 }
+//function removeItemOnce(arr, value) {
+//  var index = arr.indexOf(value);
+//  if (index > -1) {
+//    arr.splice(index, 1);
+//  }
+//  return arr;
+//}
 window.onload = function(){
   var items=document.querySelectorAll('input[type=checkbox]');
          	for(var i=0; i<items.length; i++){
@@ -332,7 +342,7 @@ window.onload = function(){
       else if(checkClassesGlobal.length>1){
         for(let i = 0; i<checkClassesGlobal.length; i++){
           if(checkClassesGlobal[i].name == ev.target.name){
-            checkClassesGlobal.splice(i,i+1)
+            checkClassesGlobal.splice(i,1)
           }
         }
       }
