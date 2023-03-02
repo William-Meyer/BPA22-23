@@ -11,6 +11,14 @@
 #resultText{
   font-weight: 700;
 }
+#shop a{
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+#shop a:visited{
+  color: black;
+}
 #resultButton{
   width: 20vw;
 max-width: 400px;

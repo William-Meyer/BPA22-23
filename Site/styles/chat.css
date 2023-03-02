@@ -8,7 +8,6 @@ html {
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   #options{
-    scrollbar-width: 7px;
     scrollbar-color: #7e7e7e transparent;
   }
   @-moz-document url-prefix(){
@@ -16,9 +15,9 @@ html {
       scrollbar-width: 5px;
     }
   }
-  #options::scrollbar-thumb{
+  /*#options::scrollbar-thumb{
     border-radius: 10px;
-  }
+  }*/
 
   /* Chrome, Edge, and Safari */
   #options::-webkit-scrollbar {
