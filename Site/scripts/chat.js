@@ -136,7 +136,7 @@ var userQuestions = [
 new userQuestion("What is your name?","chatterName", false, "", false, "" ),
 new userQuestion("What is your age?","chatterAge", false,"", false, "" ),
 new userQuestion("What is your email?","chatterEmail", false, "", false, "" ),
-new userQuestion("What type of car do you want","bodyType", true,['sadan','suv','truck','van','electric'],false,""),
+new userQuestion("What type of car do you want","bodyType", true,['sedan','suv','truck','van','electric'],false,""),
 new userQuestion("What color car do you want","carColor",false,[],false,[]),
 new userQuestion("How did you hear about Cartegrity?","chatterAbout",true,['friend/family','social media', 'other'],false,[]),
 ];
