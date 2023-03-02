@@ -21,8 +21,7 @@
   top:20px;
   width: 50vw;
   height: 18vw;
-  background-color: white;
-  opacity: 0.7;
+  background-color: #ffffffB3;
   position: absolute;
   top: 300px;
   left: 50%;
@@ -133,6 +132,20 @@
   font-style: normal;
   font-size: min(1.5vw, 24px);
   color: #f0f2f4;
+}
+.shopBtn{
+  opacity: 1;
+    width: 25vw;
+    max-width: 400px;
+    height: 4vw;
+    max-height: 50px;
+    background-color: #d25353;
+    border-radius: 1vw;
+    font-family: highgate, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: min(1.5vw, 24px);
+    color: #f0f2f4;
 }
 button:hover{
   cursor: pointer;

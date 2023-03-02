@@ -68,7 +68,7 @@ with open(filename, 'r') as csvfile:
                   </ul>
                 </div>
                 <div id="nav-desktop">
-                  <a href='i../ndex.html' class="logoArea">
+                  <a href='../index.html' class="logoArea">
                     <img src="../../imgs/logoCropped.png" alt="">
                     <h1><Strong>Car</strong>tegrity</h1>
                   </a>
