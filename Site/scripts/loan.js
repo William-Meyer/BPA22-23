@@ -56,7 +56,6 @@ function calc(){
       $('#vpo').html('$ '+addCommas(filterNums($('#vp').val())))
       $('#dpo').html('$ '+addCommas(filterNums($('#dp').val())))
       $('#lio').html('$ '+addCommas(String(parseInt(filterNums($('#ir').val()))/100)*parseInt(filterNums($('#vp').val()))))
-      alert(filterNums($('#tp').val()));
       monthly = (parseInt(filterNums($('#vp').val()))+(parseInt(filterNums($('#ir').val()))/100)*parseInt(filterNums($('#vp').val()))+(parseInt(filterNums($('#tp').val()))/100)*parseInt(filterNums($('#vp').val())) - parseInt(filterNums($('#dp').val())) - parseInt(filterNums($('#trd').val())))/length;
       if(monthly<0){
         monthly =0;
